@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		371B1A5FE0767CDB2608C14A /* libPods-RedSunLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C600D053A7C8CC4B6F28FB99 /* libPods-RedSunLottery.a */; };
+		AC1942431FB49B0500625C56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1942421FB49B0500625C56 /* AppDelegate.m */; };
+		AC1942491FB49B0500625C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1942471FB49B0500625C56 /* Main.storyboard */; };
+		AC19424B1FB49B0500625C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC19424A1FB49B0500625C56 /* Assets.xcassets */; };
+		AC19424E1FB49B0500625C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC19424C1FB49B0500625C56 /* LaunchScreen.storyboard */; };
+		AC1942511FB49B0500625C56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1942501FB49B0500625C56 /* main.m */; };
+		ACB9D8111FB887950019054F /* RSHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8101FB887950019054F /* RSHttp.m */; };
+		ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8141FB9B7910019054F /* RSProgressHUd.m */; };
+		ACB9D8191FB9BB910019054F /* RSRegisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8171FB9BB910019054F /* RSRegisViewController.m */; };
+		ACB9D81A1FB9BB910019054F /* RSRegisViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9D8181FB9BB910019054F /* RSRegisViewController.xib */; };
+		ACB9D81E1FB9CBA30019054F /* RSFindPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D81C1FB9CBA30019054F /* RSFindPwdViewController.m */; };
+		ACB9D81F1FB9CBA30019054F /* RSFindPwdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB9D81D1FB9CBA30019054F /* RSFindPwdViewController.xib */; };
+		ACB9D8221FBB06400019054F /* RSTools.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8211FBB06400019054F /* RSTools.m */; };
+		ACB9D8251FBB30420019054F /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = ACB9D8231FBB30420019054F /* private_key.p12 */; };
+		ACB9D8261FBB30420019054F /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = ACB9D8241FBB30420019054F /* public_key.der */; };
+		ACB9D8281FBB37080019054F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACB9D8271FBB37070019054F /* Security.framework */; };
+		ACB9D82B1FBB37AA0019054F /* RSRsaEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D82A1FBB37AA0019054F /* RSRsaEncryptor.m */; };
+		ACC25D651FB6987500F7DF3A /* RSBaseNavgationVController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D641FB6987500F7DF3A /* RSBaseNavgationVController.m */; };
+		ACC25D681FB698E800F7DF3A /* RSBaseTabbarVController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D671FB698E800F7DF3A /* RSBaseTabbarVController.m */; };
+		ACC25D6B1FB69C0100F7DF3A /* RSTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D6A1FB69C0100F7DF3A /* RSTabBar.m */; };
+		ACC25D711FB6C6D100F7DF3A /* RSBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D701FB6C6D100F7DF3A /* RSBaseViewController.m */; };
+		ACC25D761FB6CA3300F7DF3A /* RSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D751FB6CA3300F7DF3A /* RSFirstViewController.m */; };
+		ACC25D791FB6CA7700F7DF3A /* RSSecendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D781FB6CA7700F7DF3A /* RSSecendViewController.m */; };
+		ACC25D7C1FB6CA8700F7DF3A /* RSThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D7B1FB6CA8700F7DF3A /* RSThirdViewController.m */; };
+		ACC25D7F1FB6CA9B00F7DF3A /* RSFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D7E1FB6CA9B00F7DF3A /* RSFourthViewController.m */; };
+		ACC25D921FB6CF3900F7DF3A /* RSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D901FB6CF3900F7DF3A /* RSLoginViewController.m */; };
+		ACC25D931FB6CF3900F7DF3A /* RSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC25D911FB6CF3900F7DF3A /* RSLoginViewController.xib */; };
+		ACFD40E51FBC890A00E4BAB3 /* RSUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFD40E41FBC890A00E4BAB3 /* RSUserManager.m */; };
+		ACFD40E81FBC89BA00E4BAB3 /* RSUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFD40E71FBC89BA00E4BAB3 /* RSUserModel.m */; };
+		ACFD40EC1FBD84EA00E4BAB3 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFD40EB1FBD84EA00E4BAB3 /* SSKeychain.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		65F79820696EB5A3BDFD956E /* Pods-RedSunLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedSunLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedSunLottery/Pods-RedSunLottery.debug.xcconfig"; sourceTree = "<group>"; };
+		AC19423E1FB49B0500625C56 /* RedSunLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedSunLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1942411FB49B0500625C56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC1942421FB49B0500625C56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC1942481FB49B0500625C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC19424A1FB49B0500625C56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC19424D1FB49B0500625C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AC19424F1FB49B0500625C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC1942501FB49B0500625C56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ACB9D80F1FB887950019054F /* RSHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSHttp.h; sourceTree = "<group>"; };
+		ACB9D8101FB887950019054F /* RSHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSHttp.m; sourceTree = "<group>"; };
+		ACB9D8131FB9B7910019054F /* RSProgressHUd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSProgressHUd.h; sourceTree = "<group>"; };
+		ACB9D8141FB9B7910019054F /* RSProgressHUd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSProgressHUd.m; sourceTree = "<group>"; };
+		ACB9D8161FB9BB910019054F /* RSRegisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSRegisViewController.h; sourceTree = "<group>"; };
+		ACB9D8171FB9BB910019054F /* RSRegisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSRegisViewController.m; sourceTree = "<group>"; };
+		ACB9D8181FB9BB910019054F /* RSRegisViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSRegisViewController.xib; sourceTree = "<group>"; };
+		ACB9D81B1FB9CBA30019054F /* RSFindPwdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFindPwdViewController.h; sourceTree = "<group>"; };
+		ACB9D81C1FB9CBA30019054F /* RSFindPwdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFindPwdViewController.m; sourceTree = "<group>"; };
+		ACB9D81D1FB9CBA30019054F /* RSFindPwdViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSFindPwdViewController.xib; sourceTree = "<group>"; };
+		ACB9D8201FBB06400019054F /* RSTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTools.h; sourceTree = "<group>"; };
+		ACB9D8211FBB06400019054F /* RSTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTools.m; sourceTree = "<group>"; };
+		ACB9D8231FBB30420019054F /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
+		ACB9D8241FBB30420019054F /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		ACB9D8271FBB37070019054F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		ACB9D8291FBB37AA0019054F /* RSRsaEncryptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSRsaEncryptor.h; sourceTree = "<group>"; };
+		ACB9D82A1FBB37AA0019054F /* RSRsaEncryptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSRsaEncryptor.m; sourceTree = "<group>"; };
+		ACC25D631FB6987500F7DF3A /* RSBaseNavgationVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSBaseNavgationVController.h; sourceTree = "<group>"; };
+		ACC25D641FB6987500F7DF3A /* RSBaseNavgationVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSBaseNavgationVController.m; sourceTree = "<group>"; };
+		ACC25D661FB698E800F7DF3A /* RSBaseTabbarVController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSBaseTabbarVController.h; sourceTree = "<group>"; };
+		ACC25D671FB698E800F7DF3A /* RSBaseTabbarVController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSBaseTabbarVController.m; sourceTree = "<group>"; };
+		ACC25D691FB69C0100F7DF3A /* RSTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSTabBar.h; sourceTree = "<group>"; };
+		ACC25D6A1FB69C0100F7DF3A /* RSTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSTabBar.m; sourceTree = "<group>"; };
+		ACC25D6D1FB6A0E700F7DF3A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		ACC25D6F1FB6C6D100F7DF3A /* RSBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSBaseViewController.h; sourceTree = "<group>"; };
+		ACC25D701FB6C6D100F7DF3A /* RSBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSBaseViewController.m; sourceTree = "<group>"; };
+		ACC25D721FB6C91700F7DF3A /* RSCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSCommon.h; sourceTree = "<group>"; };
+		ACC25D731FB6C9CD00F7DF3A /* SystemCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SystemCommon.h; sourceTree = "<group>"; };
+		ACC25D741FB6CA3300F7DF3A /* RSFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstViewController.h; sourceTree = "<group>"; };
+		ACC25D751FB6CA3300F7DF3A /* RSFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstViewController.m; sourceTree = "<group>"; };
+		ACC25D771FB6CA7700F7DF3A /* RSSecendViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSecendViewController.h; sourceTree = "<group>"; };
+		ACC25D781FB6CA7700F7DF3A /* RSSecendViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSecendViewController.m; sourceTree = "<group>"; };
+		ACC25D7A1FB6CA8700F7DF3A /* RSThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSThirdViewController.h; sourceTree = "<group>"; };
+		ACC25D7B1FB6CA8700F7DF3A /* RSThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSThirdViewController.m; sourceTree = "<group>"; };
+		ACC25D7D1FB6CA9B00F7DF3A /* RSFourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFourthViewController.h; sourceTree = "<group>"; };
+		ACC25D7E1FB6CA9B00F7DF3A /* RSFourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFourthViewController.m; sourceTree = "<group>"; };
+		ACC25D8F1FB6CF3900F7DF3A /* RSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSLoginViewController.h; sourceTree = "<group>"; };
+		ACC25D901FB6CF3900F7DF3A /* RSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSLoginViewController.m; sourceTree = "<group>"; };
+		ACC25D911FB6CF3900F7DF3A /* RSLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSLoginViewController.xib; sourceTree = "<group>"; };
+		ACFD40E31FBC890A00E4BAB3 /* RSUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSUserManager.h; sourceTree = "<group>"; };
+		ACFD40E41FBC890A00E4BAB3 /* RSUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSUserManager.m; sourceTree = "<group>"; };
+		ACFD40E61FBC89BA00E4BAB3 /* RSUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSUserModel.h; sourceTree = "<group>"; };
+		ACFD40E71FBC89BA00E4BAB3 /* RSUserModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSUserModel.m; sourceTree = "<group>"; };
+		ACFD40EA1FBD84EA00E4BAB3 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		ACFD40EB1FBD84EA00E4BAB3 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
+		C600D053A7C8CC4B6F28FB99 /* libPods-RedSunLottery.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RedSunLottery.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4DA53FCDA1BFB7C1E307CD0 /* Pods-RedSunLottery.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedSunLottery.release.xcconfig"; path = "Pods/Target Support Files/Pods-RedSunLottery/Pods-RedSunLottery.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC19423B1FB49B0500625C56 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACB9D8281FBB37080019054F /* Security.framework in Frameworks */,
+				371B1A5FE0767CDB2608C14A /* libPods-RedSunLottery.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		558348F9C9A1CF3AEC8DD662 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				65F79820696EB5A3BDFD956E /* Pods-RedSunLottery.debug.xcconfig */,
+				D4DA53FCDA1BFB7C1E307CD0 /* Pods-RedSunLottery.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		802A52CCEB07776D1476056F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9D8271FBB37070019054F /* Security.framework */,
+				C600D053A7C8CC4B6F28FB99 /* libPods-RedSunLottery.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC1942351FB49B0500625C56 = {
+			isa = PBXGroup;
+			children = (
+				AC1942401FB49B0500625C56 /* RedSunLottery */,
+				AC19423F1FB49B0500625C56 /* Products */,
+				558348F9C9A1CF3AEC8DD662 /* Pods */,
+				802A52CCEB07776D1476056F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC19423F1FB49B0500625C56 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC19423E1FB49B0500625C56 /* RedSunLottery.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC1942401FB49B0500625C56 /* RedSunLottery */ = {
+			isa = PBXGroup;
+			children = (
+				AC1942571FB49C1C00625C56 /* class */,
+				AC1942471FB49B0500625C56 /* Main.storyboard */,
+				AC19424A1FB49B0500625C56 /* Assets.xcassets */,
+				AC19424C1FB49B0500625C56 /* LaunchScreen.storyboard */,
+				AC19424F1FB49B0500625C56 /* Info.plist */,
+				AC1942501FB49B0500625C56 /* main.m */,
+				ACC25D6D1FB6A0E700F7DF3A /* PrefixHeader.pch */,
+			);
+			path = RedSunLottery;
+			sourceTree = "<group>";
+		};
+		AC1942571FB49C1C00625C56 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				AC1942581FB49C1C00625C56 /* AppDelegate */,
+				ACB9D80E1FB885C10019054F /* http */,
+				ACC25D6E1FB6C3A600F7DF3A /* common */,
+				AC1942591FB49C1C00625C56 /* Base */,
+				AC19425A1FB49C1C00625C56 /* main */,
+				AC19425B1FB49C1C00625C56 /* section */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		AC1942581FB49C1C00625C56 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AC1942411FB49B0500625C56 /* AppDelegate.h */,
+				AC1942421FB49B0500625C56 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AC1942591FB49C1C00625C56 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D631FB6987500F7DF3A /* RSBaseNavgationVController.h */,
+				ACC25D641FB6987500F7DF3A /* RSBaseNavgationVController.m */,
+				ACC25D661FB698E800F7DF3A /* RSBaseTabbarVController.h */,
+				ACC25D671FB698E800F7DF3A /* RSBaseTabbarVController.m */,
+				ACC25D691FB69C0100F7DF3A /* RSTabBar.h */,
+				ACC25D6A1FB69C0100F7DF3A /* RSTabBar.m */,
+				ACC25D6F1FB6C6D100F7DF3A /* RSBaseViewController.h */,
+				ACC25D701FB6C6D100F7DF3A /* RSBaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		AC19425A1FB49C1C00625C56 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD40E91FBD84EA00E4BAB3 /* SSKeychain */,
+				ACB9D8121FB9B76A0019054F /* Tools */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		AC19425B1FB49C1C00625C56 /* section */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD40E21FBC850800E4BAB3 /* user */,
+				AC19425C1FB4A7D900625C56 /* first */,
+				AC19425F1FB4A7DA00625C56 /* secend */,
+				AC19425E1FB4A7D900625C56 /* third */,
+				AC1942601FB4A7DA00625C56 /* fourth */,
+				AC19425D1FB4A7D900625C56 /* logoin */,
+			);
+			path = section;
+			sourceTree = "<group>";
+		};
+		AC19425C1FB4A7D900625C56 /* first */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D801FB6CDD300F7DF3A /* controller */,
+				ACC25D821FB6CDEE00F7DF3A /* model */,
+				ACC25D811FB6CDED00F7DF3A /* view */,
+			);
+			path = first;
+			sourceTree = "<group>";
+		};
+		AC19425D1FB4A7D900625C56 /* logoin */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D8C1FB6CEAD00F7DF3A /* controller */,
+				ACC25D8E1FB6CEAD00F7DF3A /* model */,
+				ACC25D8D1FB6CEAD00F7DF3A /* view */,
+			);
+			path = logoin;
+			sourceTree = "<group>";
+		};
+		AC19425E1FB4A7D900625C56 /* third */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D881FB6CE4D00F7DF3A /* controller */,
+				ACC25D861FB6CE4D00F7DF3A /* model */,
+				ACC25D871FB6CE4D00F7DF3A /* view */,
+			);
+			path = third;
+			sourceTree = "<group>";
+		};
+		AC19425F1FB4A7DA00625C56 /* secend */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D851FB6CE2400F7DF3A /* controller */,
+				ACC25D831FB6CE2300F7DF3A /* model */,
+				ACC25D841FB6CE2300F7DF3A /* view */,
+			);
+			path = secend;
+			sourceTree = "<group>";
+		};
+		AC1942601FB4A7DA00625C56 /* fourth */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D891FB6CE7700F7DF3A /* controller */,
+				ACC25D8A1FB6CE7700F7DF3A /* model */,
+				ACC25D8B1FB6CE7700F7DF3A /* view */,
+			);
+			path = fourth;
+			sourceTree = "<group>";
+		};
+		ACB9D80E1FB885C10019054F /* http */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9D8231FBB30420019054F /* private_key.p12 */,
+				ACB9D8241FBB30420019054F /* public_key.der */,
+				ACB9D80F1FB887950019054F /* RSHttp.h */,
+				ACB9D8101FB887950019054F /* RSHttp.m */,
+				ACB9D8291FBB37AA0019054F /* RSRsaEncryptor.h */,
+				ACB9D82A1FBB37AA0019054F /* RSRsaEncryptor.m */,
+			);
+			path = http;
+			sourceTree = "<group>";
+		};
+		ACB9D8121FB9B76A0019054F /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9D8131FB9B7910019054F /* RSProgressHUd.h */,
+				ACB9D8141FB9B7910019054F /* RSProgressHUd.m */,
+				ACB9D8201FBB06400019054F /* RSTools.h */,
+				ACB9D8211FBB06400019054F /* RSTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		ACC25D6E1FB6C3A600F7DF3A /* common */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D721FB6C91700F7DF3A /* RSCommon.h */,
+				ACC25D731FB6C9CD00F7DF3A /* SystemCommon.h */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		ACC25D801FB6CDD300F7DF3A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D741FB6CA3300F7DF3A /* RSFirstViewController.h */,
+				ACC25D751FB6CA3300F7DF3A /* RSFirstViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		ACC25D811FB6CDED00F7DF3A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ACC25D821FB6CDEE00F7DF3A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACC25D831FB6CE2300F7DF3A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACC25D841FB6CE2300F7DF3A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ACC25D851FB6CE2400F7DF3A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D771FB6CA7700F7DF3A /* RSSecendViewController.h */,
+				ACC25D781FB6CA7700F7DF3A /* RSSecendViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		ACC25D861FB6CE4D00F7DF3A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACC25D871FB6CE4D00F7DF3A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ACC25D881FB6CE4D00F7DF3A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D7A1FB6CA8700F7DF3A /* RSThirdViewController.h */,
+				ACC25D7B1FB6CA8700F7DF3A /* RSThirdViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		ACC25D891FB6CE7700F7DF3A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D7D1FB6CA9B00F7DF3A /* RSFourthViewController.h */,
+				ACC25D7E1FB6CA9B00F7DF3A /* RSFourthViewController.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		ACC25D8A1FB6CE7700F7DF3A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACC25D8B1FB6CE7700F7DF3A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ACC25D8C1FB6CEAD00F7DF3A /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				ACC25D8F1FB6CF3900F7DF3A /* RSLoginViewController.h */,
+				ACC25D901FB6CF3900F7DF3A /* RSLoginViewController.m */,
+				ACC25D911FB6CF3900F7DF3A /* RSLoginViewController.xib */,
+				ACB9D8161FB9BB910019054F /* RSRegisViewController.h */,
+				ACB9D8171FB9BB910019054F /* RSRegisViewController.m */,
+				ACB9D8181FB9BB910019054F /* RSRegisViewController.xib */,
+				ACB9D81B1FB9CBA30019054F /* RSFindPwdViewController.h */,
+				ACB9D81C1FB9CBA30019054F /* RSFindPwdViewController.m */,
+				ACB9D81D1FB9CBA30019054F /* RSFindPwdViewController.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		ACC25D8D1FB6CEAD00F7DF3A /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ACC25D8E1FB6CEAD00F7DF3A /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		ACFD40E21FBC850800E4BAB3 /* user */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD40E31FBC890A00E4BAB3 /* RSUserManager.h */,
+				ACFD40E41FBC890A00E4BAB3 /* RSUserManager.m */,
+				ACFD40E61FBC89BA00E4BAB3 /* RSUserModel.h */,
+				ACFD40E71FBC89BA00E4BAB3 /* RSUserModel.m */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
+		ACFD40E91FBD84EA00E4BAB3 /* SSKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				ACFD40EA1FBD84EA00E4BAB3 /* SSKeychain.h */,
+				ACFD40EB1FBD84EA00E4BAB3 /* SSKeychain.m */,
+			);
+			path = SSKeychain;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC19423D1FB49B0500625C56 /* RedSunLottery */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC1942541FB49B0500625C56 /* Build configuration list for PBXNativeTarget "RedSunLottery" */;
+			buildPhases = (
+				F1D46374E6308BA1B54875D9 /* [CP] Check Pods Manifest.lock */,
+				AC19423A1FB49B0500625C56 /* Sources */,
+				AC19423B1FB49B0500625C56 /* Frameworks */,
+				AC19423C1FB49B0500625C56 /* Resources */,
+				0770976EDF6F84053B2E2302 /* [CP] Embed Pods Frameworks */,
+				654B27F3FB3796E4D9C72D8A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RedSunLottery;
+			productName = RedSunLottery;
+			productReference = AC19423E1FB49B0500625C56 /* RedSunLottery.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC1942361FB49B0500625C56 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = RedSun;
+				TargetAttributes = {
+					AC19423D1FB49B0500625C56 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = AC1942391FB49B0500625C56 /* Build configuration list for PBXProject "RedSunLottery" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC1942351FB49B0500625C56;
+			productRefGroup = AC19423F1FB49B0500625C56 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC19423D1FB49B0500625C56 /* RedSunLottery */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC19423C1FB49B0500625C56 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC19424E1FB49B0500625C56 /* LaunchScreen.storyboard in Resources */,
+				AC19424B1FB49B0500625C56 /* Assets.xcassets in Resources */,
+				ACB9D81F1FB9CBA30019054F /* RSFindPwdViewController.xib in Resources */,
+				AC1942491FB49B0500625C56 /* Main.storyboard in Resources */,
+				ACB9D8251FBB30420019054F /* private_key.p12 in Resources */,
+				ACC25D931FB6CF3900F7DF3A /* RSLoginViewController.xib in Resources */,
+				ACB9D8261FBB30420019054F /* public_key.der in Resources */,
+				ACB9D81A1FB9BB910019054F /* RSRegisViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0770976EDF6F84053B2E2302 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedSunLottery/Pods-RedSunLottery-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		654B27F3FB3796E4D9C72D8A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RedSunLottery/Pods-RedSunLottery-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1D46374E6308BA1B54875D9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC19423A1FB49B0500625C56 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFD40E81FBC89BA00E4BAB3 /* RSUserModel.m in Sources */,
+				ACB9D81E1FB9CBA30019054F /* RSFindPwdViewController.m in Sources */,
+				ACB9D8111FB887950019054F /* RSHttp.m in Sources */,
+				ACC25D6B1FB69C0100F7DF3A /* RSTabBar.m in Sources */,
+				ACC25D651FB6987500F7DF3A /* RSBaseNavgationVController.m in Sources */,
+				AC1942511FB49B0500625C56 /* main.m in Sources */,
+				ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */,
+				ACC25D711FB6C6D100F7DF3A /* RSBaseViewController.m in Sources */,
+				ACB9D82B1FBB37AA0019054F /* RSRsaEncryptor.m in Sources */,
+				ACFD40EC1FBD84EA00E4BAB3 /* SSKeychain.m in Sources */,
+				ACC25D7C1FB6CA8700F7DF3A /* RSThirdViewController.m in Sources */,
+				AC1942431FB49B0500625C56 /* AppDelegate.m in Sources */,
+				ACC25D921FB6CF3900F7DF3A /* RSLoginViewController.m in Sources */,
+				ACFD40E51FBC890A00E4BAB3 /* RSUserManager.m in Sources */,
+				ACB9D8221FBB06400019054F /* RSTools.m in Sources */,
+				ACC25D761FB6CA3300F7DF3A /* RSFirstViewController.m in Sources */,
+				ACC25D7F1FB6CA9B00F7DF3A /* RSFourthViewController.m in Sources */,
+				ACC25D681FB698E800F7DF3A /* RSBaseTabbarVController.m in Sources */,
+				ACB9D8191FB9BB910019054F /* RSRegisViewController.m in Sources */,
+				ACC25D791FB6CA7700F7DF3A /* RSSecendViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AC1942471FB49B0500625C56 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC1942481FB49B0500625C56 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC19424C1FB49B0500625C56 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC19424D1FB49B0500625C56 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC1942521FB49B0500625C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RedSunLottery/PrefixHeader.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC1942531FB49B0500625C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = RedSunLottery/PrefixHeader.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC1942551FB49B0500625C56 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F79820696EB5A3BDFD956E /* Pods-RedSunLottery.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7PZE5D3G4;
+				INFOPLIST_FILE = RedSunLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.RedSunLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AC1942561FB49B0500625C56 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4DA53FCDA1BFB7C1E307CD0 /* Pods-RedSunLottery.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Q7PZE5D3G4;
+				INFOPLIST_FILE = RedSunLottery/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.RedSunLottery;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC1942391FB49B0500625C56 /* Build configuration list for PBXProject "RedSunLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1942521FB49B0500625C56 /* Debug */,
+				AC1942531FB49B0500625C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC1942541FB49B0500625C56 /* Build configuration list for PBXNativeTarget "RedSunLottery" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC1942551FB49B0500625C56 /* Debug */,
+				AC1942561FB49B0500625C56 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC1942361FB49B0500625C56 /* Project object */;
+}

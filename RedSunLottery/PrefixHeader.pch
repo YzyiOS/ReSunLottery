@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  RedSunLottery
+//
+//  Created by haozhong on 2017/11/11.
+//  Copyright © 2017年 RedSun. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+    #import <YYCategories/YYCategories.h>
+    #import "AppDelegate.h"
+    #import "RSCommon.h"
+    #import "SystemCommon.h"
+    #import <Masonry/Masonry.h>
+    #import <SDWebImage/UIImageView+WebCache.h>
+    #import <YYModel/YYModel.h>
+    #import "RSTools.h"
+    #import "RSProgressHUd.h"
+    #import "RSHttp.h"
+    #import "RSRsaEncryptor.h"
+    #import "RSUserManager.h"
+
+#endif /* PrefixHeader_pch */
