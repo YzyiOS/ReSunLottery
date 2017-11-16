@@ -233,9 +233,9 @@
 		AC19425D1FB4A7D900625C56 /* logoin */ = {
 			isa = PBXGroup;
 			children = (
+				ACC25D8C1FB6CEAD00F7DF3A /* controller */,
 				ACF552781FBDBEFD0012B5EC /* model */,
 				ACF552771FBDBEFD0012B5EC /* view */,
-				ACC25D8C1FB6CEAD00F7DF3A /* controller */,
 			);
 			path = logoin;
 			sourceTree = "<group>";

@@ -8,6 +8,7 @@
 
 #import "RSLoginViewController.h"
 #import "RSRegisViewController.h"
+#import "RSFindPwdViewController.h"
 
 @interface RSLoginViewController ()<UITextFieldDelegate>
 
@@ -99,6 +100,11 @@
     [self.logBtn setBackgroundColor:[UIColor colorWithHexString:@"#f63f3f"]];
     
 }
+- (IBAction)forgetPwdClick:(id)sender {
+    RSFindPwdViewController *vc = [[RSFindPwdViewController alloc] init];
+    [self presentViewController:vc animated:YES completion:nil];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

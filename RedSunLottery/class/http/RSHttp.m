@@ -108,7 +108,7 @@ static AFHTTPSessionManager *_manager;          //post-get Manager
         [RSProgressHUd showErrorWithText:@"网络未连接"];
         return session;
     }
-    if ([url containsString:@"user"]) {
+    if ([url containsString:@"/user/"]) {
         [params setObject:[RSTools dicToMD5:params] forKey:@"sign"];
     }
     

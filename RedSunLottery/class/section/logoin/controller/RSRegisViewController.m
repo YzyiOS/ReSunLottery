@@ -64,10 +64,6 @@
     } failBlock:^(NSError *error) {
         
     }];
-    
-    
-   
-    
 }
 - (void)_run60Second{
     _sendAuthCodeBtn.enabled = NO;
@@ -144,8 +140,6 @@
     } failBlock:^(NSError *error) {
         
     }];
-   
-    
 }
 - (void)textFieldDidChange:(UITextField *)textField22
 {

@@ -99,6 +99,9 @@
                     <state key="normal" title="忘记密码？">
                         <color key="titleColor" red="0.458770751953125" green="0.45885384082794189" blue="0.45876550674438477" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </state>
+                    <connections>
+                        <action selector="forgetPwdClick:" destination="-1" eventType="touchUpInside" id="mm2-NE-qUM"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7C-bD-sWD">
                     <rect key="frame" x="280" y="343.5" width="75" height="33"/>
