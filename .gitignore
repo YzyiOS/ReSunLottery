@@ -23,7 +23,6 @@ xcuserdata/
 ## cocoapods
 Pods/
 Podfile.lock
-*.xcworkspace
 ## Obj-C/Swift specific
 *.hmap
 *.ipa
