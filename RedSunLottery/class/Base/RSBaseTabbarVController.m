@@ -42,15 +42,15 @@
     
     // 探索、消息 和 我的 Tab 需要检查登录状态
     if ( tabBarController.childViewControllers[3] == viewController) {
-//        if ([[RSUserManager shareDataManager] isLogOn]) {
-//
-//        }else{
+        if ([[RSUserManager shareDataManager] isLogOn]) {
+
+        }else{
             UIViewController *vc = tabBarController.selectedViewController.childViewControllers.firstObject;
             RSLoginViewController *login = [[RSLoginViewController alloc] init];
-        [vc presentViewController:login animated:YES completion:^{
-            [tabBarController setSelectedIndex:2];
-        }];
-//        }
+            [vc presentViewController:login animated:YES completion:^{
+                [tabBarController setSelectedIndex:2];
+            }];
+        }
         
         
         
