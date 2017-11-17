@@ -50,11 +50,7 @@ typedef void(^RequestNetWorkStatus)(NetworkStatus status);
  @param successBlock 成功回调
  @param failBlock 失败回调
  */
-+(URLSessionTask*)getRequestURL:(NSString*)url
-                         params:(NSMutableDictionary*)params
-                          cache:(BOOL)cache
-                   successBlock:(RequestSuccess)successBlock
-                      failBlock:(RequestFail)failBlock;
++ (URLSessionTask *)getRequestURL:(NSString *)url params:(NSDictionary *)params cache:(BOOL)cache  successBlock:(RequestSuccess)successBlock failBlock:(RequestFail)failBlock;
 
 
 

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RSFirstLotteryModel.h"
 
 @interface RSFirstTypeCell : UICollectionViewCell
+
+@property (nonatomic, strong)RSFirstLotteryModel *model;
 
 @end

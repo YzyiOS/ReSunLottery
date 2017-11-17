@@ -8,6 +8,7 @@
 
 #import "RSFirstBannerView.h"
 #import "SDCycleScrollView.h"
+#import "RSFirstBannerModel.h"
 
 @interface RSFirstBannerView()<SDCycleScrollViewDelegate>
 
@@ -20,25 +21,33 @@
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self == [super initWithFrame:frame]) {
-        [self setUI];
         
+        [self setUI];
     }
     return self;
 }
-
+- (void)setBannerArr:(NSArray *)bannerArr{
+    _bannerArr = bannerArr;
+    
+    [self setData];
+}
+- (void)setData{
+    NSMutableArray *arrayM = @[].mutableCopy;
+    [self.bannerArr enumerateObjectsUsingBlock:^(RSFirstBannerModel * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        [arrayM addObject:obj.pictureUrl];
+    }];
+    _cycleScrollView.imageURLStringsGroup = arrayM.copy;
+}
 
 - (void)setUI{
-    _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectZero
+    _cycleScrollView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, k_WIDTH, self.height)
                                                           delegate:self
                                                   placeholderImage:[UIImage imageWithColor:K_GRAY_BG_COLOR size:CGSizeMake(1, 1)]];
-    _cycleScrollView.currentPageDotColor = [UIColor whiteColor];
+    _cycleScrollView.currentPageDotColor = K_GRAY_BG_COLOR;
     _cycleScrollView.pageDotColor = [UIColor whiteColor];
     _cycleScrollView.autoScrollTimeInterval = 5;
     _cycleScrollView.bannerImageViewContentMode = UIViewContentModeScaleAspectFill;
     [self addSubview:_cycleScrollView];
-//    [_cycleScrollView mas_makeConstraints:^(MASConstraintMaker *make) {
-//        make.edges.equalTo(0);
-//    }];
 }
 - (void)updateConstraints{
     [super updateConstraints];

@@ -9,12 +9,19 @@
 #import "RSFirstViewController.h"
 #import "RSFirstBannerView.h"
 #import "RSFirstTypeTableCell.h"
-#import "RSFirstTypeCollectionVC.h"
+
+#import "RSFirstLotteryModel.h"
+#import "RSFirstBannerModel.h"
 
 @interface RSFirstViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
 
 @property (nonatomic, strong) RSFirstBannerView *bannerView;
+
+@property (nonatomic, strong) NSArray *lotteryArr;
+
+@property (nonatomic, strong) NSArray *bannerArr;
+
 @end
 
 @implementation RSFirstViewController
@@ -26,29 +33,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    [self.view addSubview:self.tableView];
     [self setUI];
+    [self.view addSubview:self.tableView];
+    [self getData];
+    
     // Do any additional setup after loading the view.
+}
+- (void)getData{
+    [RSHttp getRequestURL:@"/home/home.json" params:@{} cache:NO successBlock:^(id responseDict) {
+        _lotteryArr = [NSArray yy_modelArrayWithClass:[RSFirstLotteryModel class] json:responseDict[@"lottery"]];
+        _bannerArr = [NSArray yy_modelArrayWithClass:[RSFirstBannerModel class] json:responseDict[@"banner"]];
+        _bannerView.bannerArr = _bannerArr;
+        [self.tableView reloadData];
+    } failBlock:^(NSError *error) {
+    
+    }];
+    
 }
 
 - (UITableView *)tableView{
     if (!_tableView) {
-        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, k_WIDTH, k_HEIGHT) style:UITableViewStylePlain];
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, k_WIDTH, k_HEIGHT) style:UITableViewStyleGrouped];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.showsHorizontalScrollIndicator = NO;
-        [_tableView registerClass:[RSFirstTypeTableCell class] forCellReuseIdentifier:@"RSFirstTypeTableCell"];
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+        CGRect bannerRect = CGRectMake(0, 0, k_WIDTH, 174);
+        _bannerView = [[RSFirstBannerView alloc] initWithFrame:bannerRect];
+        _tableView.tableHeaderView = _bannerView;
     }
     return _tableView;
 }
 - (void)setUI{
-    CGRect bannerRect = CGRectMake(0, 0, k_WIDTH, 174);
-    _bannerView = [[RSFirstBannerView alloc] initWithFrame:bannerRect];
-    self.tableView.tableHeaderView = _bannerView;
-}
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
-    return 1;
+    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 2;
@@ -57,15 +75,25 @@
     return 174;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 100;
+    return 490;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-  
-       RSFirstTypeTableCell *topThreeCell = [tableView dequeueReusableCellWithIdentifier:@"RSFirstTypeTableCell" forIndexPath:indexPath];
-        [topThreeCell setVM:[[RSFirstTypeCollectionVC alloc] init]];
+
+       RSFirstTypeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"RSFirstTypeTableCell"];
+        if (!cell) {
+            cell = [[RSFirstTypeTableCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"RSFirstTypeTableCell"];
+        }
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+        cell.lotteryArr = _lotteryArr;
+        return cell;
     }
-    
+//    UITableViewCell *acell = [tableView dequeueReusableCellWithIdentifier:@"acell"];
+//    if (!acell) {
+//        acell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"acell"];
+//    }
+//    acell.backgroundColor = [UIColor redColor];
+//    acell.selectionStyle = UITableViewCellSelectionStyleNone;
     return [UITableViewCell new];
 }
 

@@ -13,11 +13,12 @@
 		AC19424B1FB49B0500625C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC19424A1FB49B0500625C56 /* Assets.xcassets */; };
 		AC19424E1FB49B0500625C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC19424C1FB49B0500625C56 /* LaunchScreen.storyboard */; };
 		AC1942511FB49B0500625C56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1942501FB49B0500625C56 /* main.m */; };
+		AC395F111FBF3E150028F84E /* RSFirstLotteryModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F101FBF3E150028F84E /* RSFirstLotteryModel.m */; };
+		AC395F141FBF415A0028F84E /* RSFirstBannerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F131FBF415A0028F84E /* RSFirstBannerModel.m */; };
 		AC5344C31FBDE3EE003D358E /* RSFirstBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344C21FBDE3EE003D358E /* RSFirstBannerView.m */; };
 		AC5344D71FBDF5AF003D358E /* RSFirstTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344D51FBDF5AF003D358E /* RSFirstTypeCell.m */; };
 		AC5344D81FBDF5AF003D358E /* RSFirstTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5344D61FBDF5AF003D358E /* RSFirstTypeCell.xib */; };
 		AC5344DB1FBDF609003D358E /* RSFirstTypeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344DA1FBDF609003D358E /* RSFirstTypeTableCell.m */; };
-		AC5344DE1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344DD1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m */; };
 		ACB9D8111FB887950019054F /* RSHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8101FB887950019054F /* RSHttp.m */; };
 		ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8141FB9B7910019054F /* RSProgressHUd.m */; };
 		ACB9D8191FB9BB910019054F /* RSRegisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8171FB9BB910019054F /* RSRegisViewController.m */; };
@@ -61,6 +62,10 @@
 		AC19424D1FB49B0500625C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC19424F1FB49B0500625C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC1942501FB49B0500625C56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC395F0F1FBF3E150028F84E /* RSFirstLotteryModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstLotteryModel.h; sourceTree = "<group>"; };
+		AC395F101FBF3E150028F84E /* RSFirstLotteryModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstLotteryModel.m; sourceTree = "<group>"; };
+		AC395F121FBF415A0028F84E /* RSFirstBannerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstBannerModel.h; sourceTree = "<group>"; };
+		AC395F131FBF415A0028F84E /* RSFirstBannerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstBannerModel.m; sourceTree = "<group>"; };
 		AC5344C11FBDE3EE003D358E /* RSFirstBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstBannerView.h; sourceTree = "<group>"; };
 		AC5344C21FBDE3EE003D358E /* RSFirstBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstBannerView.m; sourceTree = "<group>"; };
 		AC5344D41FBDF5AF003D358E /* RSFirstTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstTypeCell.h; sourceTree = "<group>"; };
@@ -68,8 +73,6 @@
 		AC5344D61FBDF5AF003D358E /* RSFirstTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSFirstTypeCell.xib; sourceTree = "<group>"; };
 		AC5344D91FBDF609003D358E /* RSFirstTypeTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstTypeTableCell.h; sourceTree = "<group>"; };
 		AC5344DA1FBDF609003D358E /* RSFirstTypeTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstTypeTableCell.m; sourceTree = "<group>"; };
-		AC5344DC1FBE6CBB003D358E /* RSFirstTypeCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstTypeCollectionVC.h; sourceTree = "<group>"; };
-		AC5344DD1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstTypeCollectionVC.m; sourceTree = "<group>"; };
 		ACB9D80F1FB887950019054F /* RSHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSHttp.h; sourceTree = "<group>"; };
 		ACB9D8101FB887950019054F /* RSHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSHttp.m; sourceTree = "<group>"; };
 		ACB9D8131FB9B7910019054F /* RSProgressHUd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSProgressHUd.h; sourceTree = "<group>"; };
@@ -309,6 +312,10 @@
 		AC5344BC1FBDDF37003D358E /* model */ = {
 			isa = PBXGroup;
 			children = (
+				AC395F0F1FBF3E150028F84E /* RSFirstLotteryModel.h */,
+				AC395F101FBF3E150028F84E /* RSFirstLotteryModel.m */,
+				AC395F121FBF415A0028F84E /* RSFirstBannerModel.h */,
+				AC395F131FBF415A0028F84E /* RSFirstBannerModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -323,8 +330,6 @@
 				AC5344D61FBDF5AF003D358E /* RSFirstTypeCell.xib */,
 				AC5344D91FBDF609003D358E /* RSFirstTypeTableCell.h */,
 				AC5344DA1FBDF609003D358E /* RSFirstTypeTableCell.m */,
-				AC5344DC1FBE6CBB003D358E /* RSFirstTypeCollectionVC.h */,
-				AC5344DD1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -648,13 +653,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFD40E81FBC89BA00E4BAB3 /* RSUserModel.m in Sources */,
+				AC395F111FBF3E150028F84E /* RSFirstLotteryModel.m in Sources */,
 				ACB9D81E1FB9CBA30019054F /* RSFindPwdViewController.m in Sources */,
+				AC395F141FBF415A0028F84E /* RSFirstBannerModel.m in Sources */,
 				ACB9D8111FB887950019054F /* RSHttp.m in Sources */,
 				ACC25D6B1FB69C0100F7DF3A /* RSTabBar.m in Sources */,
 				ACF552911FBDDBD80012B5EC /* UIView+SDExtension.m in Sources */,
 				ACC25D651FB6987500F7DF3A /* RSBaseNavgationVController.m in Sources */,
 				ACF5528E1FBDDBD80012B5EC /* TAPageControl.m in Sources */,
-				AC5344DE1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m in Sources */,
 				AC1942511FB49B0500625C56 /* main.m in Sources */,
 				ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */,
 				ACC25D711FB6C6D100F7DF3A /* RSBaseViewController.m in Sources */,

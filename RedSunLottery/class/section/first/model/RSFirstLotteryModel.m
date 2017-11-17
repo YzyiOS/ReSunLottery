@@ -1,13 +1,13 @@
 //
-//  RSFirstTypeCollectionVC.h
+//  RSFirstLotteryModel.m
 //  RedSunLottery
 //
 //  Created by haozhong on 2017/11/17.
 //  Copyright © 2017年 RedSun. All rights reserved.
 //
 
-#import "RSBaseViewController.h"
+#import "RSFirstLotteryModel.h"
 
-@interface RSFirstTypeCollectionVC : RSBaseViewController
+@implementation RSFirstLotteryModel
 
 @end

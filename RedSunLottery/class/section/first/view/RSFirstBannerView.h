@@ -10,4 +10,6 @@
 
 @interface RSFirstBannerView : UIView
 
+@property (nonatomic, strong) NSArray *bannerArr;
+
 @end

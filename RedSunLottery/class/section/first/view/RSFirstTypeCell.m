@@ -7,6 +7,13 @@
 //
 
 #import "RSFirstTypeCell.h"
+@interface RSFirstTypeCell()
+@property (weak, nonatomic) IBOutlet UIImageView *iconImg;
+@property (weak, nonatomic) IBOutlet UILabel *labName;
+
+@property (weak, nonatomic) IBOutlet UILabel *labDesc;
+
+@end
 
 @implementation RSFirstTypeCell
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -15,6 +22,23 @@
         
     }
     return self;
+}
+- (void)setModel:(RSFirstLotteryModel *)model{
+    _model = model;
+    
+    [_iconImg sd_setImageWithURL:[NSURL URLWithString:model.icon]];
+    self.labName.text = model.name;
+    self.labDesc.text = model.desc;
+    if ([model.open integerValue]) {
+        self.labDesc.layer.cornerRadius = self.labDesc.height/2;
+        self.labDesc.layer.masksToBounds = YES;
+        self.labDesc.backgroundColor = [UIColor colorWithHexString:@"#ff8c00"];
+        self.labDesc.textColor = [UIColor whiteColor];
+    }else{
+        self.labDesc.textColor = [UIColor colorWithHexString:@"#999999"];
+    }
+    
+    
 }
 
 - (void)awakeFromNib {

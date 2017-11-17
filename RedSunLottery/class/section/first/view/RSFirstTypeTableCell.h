@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RSFirstTypeCollectionVC.h"
+
 @interface RSFirstTypeTableCell : UITableViewCell
 
-
-- (void)setVM:(RSFirstTypeCollectionVC *)viewModel;
+@property (nonatomic, strong) NSArray *lotteryArr;
 
 @end

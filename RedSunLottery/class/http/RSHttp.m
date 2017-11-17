@@ -51,7 +51,7 @@ static AFHTTPSessionManager *_manager;          //post-get Manager
                                                      @"application/octet-stream",
                                                      @"application/zip", nil];
         
-        NSURL *baseUrl = [NSURL URLWithString:@"http://mobile.tuiqiuxiong.com"];
+        NSURL *baseUrl = [NSURL URLWithString:@"http://static.tuiqiuxiong.com"];
         _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseUrl];
         _manager.requestSerializer = requestSerializer;
         _manager.responseSerializer = responseSerializer;
@@ -96,7 +96,44 @@ static AFHTTPSessionManager *_manager;          //post-get Manager
     [manager startMonitoring];
     
 }
+#pragma mark 新get
++ (URLSessionTask *)getRequestURL:(NSString *)url params:(NSDictionary *)params cache:(BOOL)cache  successBlock:(RequestSuccess)successBlock failBlock:(RequestFail)failBlock {
+    
+    URLSessionTask *session = nil;
+    AFHTTPSessionManager *manager = [self shareManager];
 
+    if (_netStatus == NetworkStatusNotReachable) {
+        if (failBlock) {
+            failBlock(XD_ERROR);
+        }
+        [RSProgressHUd showErrorWithText:@"网络未连接"];
+        return session;
+    }
+
+    [manager GET:url parameters:params progress:^(NSProgress *  downloadProgress) {
+//        if(progressBlock){
+//            progressBlock(downloadProgress);
+//        }
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        RSLog(@"\n>>>\n地址:\n     %@\n返回的数据:%@\n<<<",url,[responseObject description]);
+
+        NSDictionary *data = (NSDictionary*)responseObject;
+        
+            successBlock(data);
+        
+        //移除任务
+        [[self allTasks] removeObject:session];
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        failBlock(error);
+        [[self allTasks] removeObject:session];
+    }];
+    if (session)
+    {
+        [[self allTasks] addObject:session];
+    }
+    return session;
+}
 #pragma mark 新的post
 + (URLSessionTask*)postRequestURL:(NSString *)url params:(NSMutableDictionary *)params cache:(BOOL)cache  successBlock:(RequestSuccess)successBlock failBlock:(RequestFail)failBlock {
     URLSessionTask *session = nil;
