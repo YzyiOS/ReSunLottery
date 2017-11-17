@@ -13,6 +13,11 @@
 		AC19424B1FB49B0500625C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC19424A1FB49B0500625C56 /* Assets.xcassets */; };
 		AC19424E1FB49B0500625C56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC19424C1FB49B0500625C56 /* LaunchScreen.storyboard */; };
 		AC1942511FB49B0500625C56 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1942501FB49B0500625C56 /* main.m */; };
+		AC5344C31FBDE3EE003D358E /* RSFirstBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344C21FBDE3EE003D358E /* RSFirstBannerView.m */; };
+		AC5344D71FBDF5AF003D358E /* RSFirstTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344D51FBDF5AF003D358E /* RSFirstTypeCell.m */; };
+		AC5344D81FBDF5AF003D358E /* RSFirstTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5344D61FBDF5AF003D358E /* RSFirstTypeCell.xib */; };
+		AC5344DB1FBDF609003D358E /* RSFirstTypeTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344DA1FBDF609003D358E /* RSFirstTypeTableCell.m */; };
+		AC5344DE1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344DD1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m */; };
 		ACB9D8111FB887950019054F /* RSHttp.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8101FB887950019054F /* RSHttp.m */; };
 		ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8141FB9B7910019054F /* RSProgressHUd.m */; };
 		ACB9D8191FB9BB910019054F /* RSRegisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB9D8171FB9BB910019054F /* RSRegisViewController.m */; };
@@ -34,6 +39,13 @@
 		ACC25D7F1FB6CA9B00F7DF3A /* RSFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D7E1FB6CA9B00F7DF3A /* RSFourthViewController.m */; };
 		ACC25D921FB6CF3900F7DF3A /* RSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D901FB6CF3900F7DF3A /* RSLoginViewController.m */; };
 		ACC25D931FB6CF3900F7DF3A /* RSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC25D911FB6CF3900F7DF3A /* RSLoginViewController.xib */; };
+		ACF5528B1FBDDBD80012B5EC /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF5527E1FBDDBD80012B5EC /* TAAbstractDotView.m */; };
+		ACF5528C1FBDDBD80012B5EC /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF552801FBDDBD80012B5EC /* TAAnimatedDotView.m */; };
+		ACF5528D1FBDDBD80012B5EC /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF552821FBDDBD80012B5EC /* TADotView.m */; };
+		ACF5528E1FBDDBD80012B5EC /* TAPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF552841FBDDBD80012B5EC /* TAPageControl.m */; };
+		ACF5528F1FBDDBD80012B5EC /* SDCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF552861FBDDBD80012B5EC /* SDCollectionViewCell.m */; };
+		ACF552901FBDDBD80012B5EC /* SDCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF552881FBDDBD80012B5EC /* SDCycleScrollView.m */; };
+		ACF552911FBDDBD80012B5EC /* UIView+SDExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF5528A1FBDDBD80012B5EC /* UIView+SDExtension.m */; };
 		ACFD40E51FBC890A00E4BAB3 /* RSUserManager.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFD40E41FBC890A00E4BAB3 /* RSUserManager.m */; };
 		ACFD40E81FBC89BA00E4BAB3 /* RSUserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFD40E71FBC89BA00E4BAB3 /* RSUserModel.m */; };
 		ACFD40EC1FBD84EA00E4BAB3 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = ACFD40EB1FBD84EA00E4BAB3 /* SSKeychain.m */; };
@@ -49,6 +61,15 @@
 		AC19424D1FB49B0500625C56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC19424F1FB49B0500625C56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC1942501FB49B0500625C56 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC5344C11FBDE3EE003D358E /* RSFirstBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstBannerView.h; sourceTree = "<group>"; };
+		AC5344C21FBDE3EE003D358E /* RSFirstBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstBannerView.m; sourceTree = "<group>"; };
+		AC5344D41FBDF5AF003D358E /* RSFirstTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstTypeCell.h; sourceTree = "<group>"; };
+		AC5344D51FBDF5AF003D358E /* RSFirstTypeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstTypeCell.m; sourceTree = "<group>"; };
+		AC5344D61FBDF5AF003D358E /* RSFirstTypeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSFirstTypeCell.xib; sourceTree = "<group>"; };
+		AC5344D91FBDF609003D358E /* RSFirstTypeTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstTypeTableCell.h; sourceTree = "<group>"; };
+		AC5344DA1FBDF609003D358E /* RSFirstTypeTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstTypeTableCell.m; sourceTree = "<group>"; };
+		AC5344DC1FBE6CBB003D358E /* RSFirstTypeCollectionVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstTypeCollectionVC.h; sourceTree = "<group>"; };
+		AC5344DD1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstTypeCollectionVC.m; sourceTree = "<group>"; };
 		ACB9D80F1FB887950019054F /* RSHttp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSHttp.h; sourceTree = "<group>"; };
 		ACB9D8101FB887950019054F /* RSHttp.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSHttp.m; sourceTree = "<group>"; };
 		ACB9D8131FB9B7910019054F /* RSProgressHUd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSProgressHUd.h; sourceTree = "<group>"; };
@@ -88,6 +109,20 @@
 		ACC25D8F1FB6CF3900F7DF3A /* RSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSLoginViewController.h; sourceTree = "<group>"; };
 		ACC25D901FB6CF3900F7DF3A /* RSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSLoginViewController.m; sourceTree = "<group>"; };
 		ACC25D911FB6CF3900F7DF3A /* RSLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSLoginViewController.xib; sourceTree = "<group>"; };
+		ACF5527D1FBDDBD80012B5EC /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
+		ACF5527E1FBDDBD80012B5EC /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
+		ACF5527F1FBDDBD80012B5EC /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
+		ACF552801FBDDBD80012B5EC /* TAAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAnimatedDotView.m; sourceTree = "<group>"; };
+		ACF552811FBDDBD80012B5EC /* TADotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TADotView.h; sourceTree = "<group>"; };
+		ACF552821FBDDBD80012B5EC /* TADotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TADotView.m; sourceTree = "<group>"; };
+		ACF552831FBDDBD80012B5EC /* TAPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAPageControl.h; sourceTree = "<group>"; };
+		ACF552841FBDDBD80012B5EC /* TAPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAPageControl.m; sourceTree = "<group>"; };
+		ACF552851FBDDBD80012B5EC /* SDCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCollectionViewCell.h; sourceTree = "<group>"; };
+		ACF552861FBDDBD80012B5EC /* SDCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCollectionViewCell.m; sourceTree = "<group>"; };
+		ACF552871FBDDBD80012B5EC /* SDCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDCycleScrollView.h; sourceTree = "<group>"; };
+		ACF552881FBDDBD80012B5EC /* SDCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDCycleScrollView.m; sourceTree = "<group>"; };
+		ACF552891FBDDBD80012B5EC /* UIView+SDExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SDExtension.h"; sourceTree = "<group>"; };
+		ACF5528A1FBDDBD80012B5EC /* UIView+SDExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SDExtension.m"; sourceTree = "<group>"; };
 		ACFD40E31FBC890A00E4BAB3 /* RSUserManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSUserManager.h; sourceTree = "<group>"; };
 		ACFD40E41FBC890A00E4BAB3 /* RSUserManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSUserManager.m; sourceTree = "<group>"; };
 		ACFD40E61FBC89BA00E4BAB3 /* RSUserModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSUserModel.h; sourceTree = "<group>"; };
@@ -201,6 +236,7 @@
 		AC19425A1FB49C1C00625C56 /* main */ = {
 			isa = PBXGroup;
 			children = (
+				ACF5527B1FBDDBD80012B5EC /* SDCycleScrollView */,
 				ACFD40E91FBD84EA00E4BAB3 /* SSKeychain */,
 				ACB9D8121FB9B76A0019054F /* Tools */,
 			);
@@ -224,8 +260,8 @@
 			isa = PBXGroup;
 			children = (
 				ACC25D801FB6CDD300F7DF3A /* controller */,
-				ACF552711FBDBE850012B5EC /* model */,
-				ACF552721FBDBE860012B5EC /* view */,
+				AC5344BC1FBDDF37003D358E /* model */,
+				AC5344BD1FBDDF37003D358E /* view */,
 			);
 			path = first;
 			sourceTree = "<group>";
@@ -268,6 +304,29 @@
 				ACF552761FBDBED70012B5EC /* view */,
 			);
 			path = fourth;
+			sourceTree = "<group>";
+		};
+		AC5344BC1FBDDF37003D358E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AC5344BD1FBDDF37003D358E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AC5344C11FBDE3EE003D358E /* RSFirstBannerView.h */,
+				AC5344C21FBDE3EE003D358E /* RSFirstBannerView.m */,
+				AC5344D41FBDF5AF003D358E /* RSFirstTypeCell.h */,
+				AC5344D51FBDF5AF003D358E /* RSFirstTypeCell.m */,
+				AC5344D61FBDF5AF003D358E /* RSFirstTypeCell.xib */,
+				AC5344D91FBDF609003D358E /* RSFirstTypeTableCell.h */,
+				AC5344DA1FBDF609003D358E /* RSFirstTypeTableCell.m */,
+				AC5344DC1FBE6CBB003D358E /* RSFirstTypeCollectionVC.h */,
+				AC5344DD1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		ACB9D80E1FB885C10019054F /* http */ = {
@@ -355,20 +414,6 @@
 			path = controller;
 			sourceTree = "<group>";
 		};
-		ACF552711FBDBE850012B5EC /* model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = model;
-			sourceTree = "<group>";
-		};
-		ACF552721FBDBE860012B5EC /* view */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = view;
-			sourceTree = "<group>";
-		};
 		ACF552731FBDBEB90012B5EC /* view */ = {
 			isa = PBXGroup;
 			children = (
@@ -423,6 +468,35 @@
 			children = (
 			);
 			path = view;
+			sourceTree = "<group>";
+		};
+		ACF5527B1FBDDBD80012B5EC /* SDCycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				ACF5527C1FBDDBD80012B5EC /* PageControl */,
+				ACF552851FBDDBD80012B5EC /* SDCollectionViewCell.h */,
+				ACF552861FBDDBD80012B5EC /* SDCollectionViewCell.m */,
+				ACF552871FBDDBD80012B5EC /* SDCycleScrollView.h */,
+				ACF552881FBDDBD80012B5EC /* SDCycleScrollView.m */,
+				ACF552891FBDDBD80012B5EC /* UIView+SDExtension.h */,
+				ACF5528A1FBDDBD80012B5EC /* UIView+SDExtension.m */,
+			);
+			path = SDCycleScrollView;
+			sourceTree = "<group>";
+		};
+		ACF5527C1FBDDBD80012B5EC /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				ACF5527D1FBDDBD80012B5EC /* TAAbstractDotView.h */,
+				ACF5527E1FBDDBD80012B5EC /* TAAbstractDotView.m */,
+				ACF5527F1FBDDBD80012B5EC /* TAAnimatedDotView.h */,
+				ACF552801FBDDBD80012B5EC /* TAAnimatedDotView.m */,
+				ACF552811FBDDBD80012B5EC /* TADotView.h */,
+				ACF552821FBDDBD80012B5EC /* TADotView.m */,
+				ACF552831FBDDBD80012B5EC /* TAPageControl.h */,
+				ACF552841FBDDBD80012B5EC /* TAPageControl.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 		ACFD40E21FBC850800E4BAB3 /* user */ = {
@@ -514,6 +588,7 @@
 				ACC25D931FB6CF3900F7DF3A /* RSLoginViewController.xib in Resources */,
 				ACB9D8261FBB30420019054F /* public_key.der in Resources */,
 				ACB9D81A1FB9BB910019054F /* RSRegisViewController.xib in Resources */,
+				AC5344D81FBDF5AF003D358E /* RSFirstTypeCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,19 +651,30 @@
 				ACB9D81E1FB9CBA30019054F /* RSFindPwdViewController.m in Sources */,
 				ACB9D8111FB887950019054F /* RSHttp.m in Sources */,
 				ACC25D6B1FB69C0100F7DF3A /* RSTabBar.m in Sources */,
+				ACF552911FBDDBD80012B5EC /* UIView+SDExtension.m in Sources */,
 				ACC25D651FB6987500F7DF3A /* RSBaseNavgationVController.m in Sources */,
+				ACF5528E1FBDDBD80012B5EC /* TAPageControl.m in Sources */,
+				AC5344DE1FBE6CBB003D358E /* RSFirstTypeCollectionVC.m in Sources */,
 				AC1942511FB49B0500625C56 /* main.m in Sources */,
 				ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */,
 				ACC25D711FB6C6D100F7DF3A /* RSBaseViewController.m in Sources */,
 				ACB9D82B1FBB37AA0019054F /* RSRsaEncryptor.m in Sources */,
 				ACFD40EC1FBD84EA00E4BAB3 /* SSKeychain.m in Sources */,
+				ACF5528C1FBDDBD80012B5EC /* TAAnimatedDotView.m in Sources */,
+				ACF5528D1FBDDBD80012B5EC /* TADotView.m in Sources */,
+				ACF5528B1FBDDBD80012B5EC /* TAAbstractDotView.m in Sources */,
 				ACC25D7C1FB6CA8700F7DF3A /* RSThirdViewController.m in Sources */,
 				AC1942431FB49B0500625C56 /* AppDelegate.m in Sources */,
+				AC5344C31FBDE3EE003D358E /* RSFirstBannerView.m in Sources */,
 				ACC25D921FB6CF3900F7DF3A /* RSLoginViewController.m in Sources */,
+				ACF552901FBDDBD80012B5EC /* SDCycleScrollView.m in Sources */,
 				ACFD40E51FBC890A00E4BAB3 /* RSUserManager.m in Sources */,
+				ACF5528F1FBDDBD80012B5EC /* SDCollectionViewCell.m in Sources */,
 				ACB9D8221FBB06400019054F /* RSTools.m in Sources */,
 				ACC25D761FB6CA3300F7DF3A /* RSFirstViewController.m in Sources */,
+				AC5344D71FBDF5AF003D358E /* RSFirstTypeCell.m in Sources */,
 				ACC25D7F1FB6CA9B00F7DF3A /* RSFourthViewController.m in Sources */,
+				AC5344DB1FBDF609003D358E /* RSFirstTypeTableCell.m in Sources */,
 				ACC25D681FB698E800F7DF3A /* RSBaseTabbarVController.m in Sources */,
 				ACB9D8191FB9BB910019054F /* RSRegisViewController.m in Sources */,
 				ACC25D791FB6CA7700F7DF3A /* RSSecendViewController.m in Sources */,

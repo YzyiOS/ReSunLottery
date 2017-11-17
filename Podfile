@@ -9,7 +9,7 @@ target 'RedSunLottery' do
 
   # Pods for RedSunLottery
   pod 'AFNetworking', '~> 3.1.0'
-  pod 'SDWebImage'
+  pod 'SDWebImage', '~> 3.7.6'
   pod 'Masonry'
   pod 'YYModel'
   pod 'YYCategories'
