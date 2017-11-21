@@ -35,6 +35,7 @@
         self.labDesc.backgroundColor = [UIColor colorWithHexString:@"#ff8c00"];
         self.labDesc.textColor = [UIColor whiteColor];
     }else{
+        self.labDesc.backgroundColor = [UIColor whiteColor];
         self.labDesc.textColor = [UIColor colorWithHexString:@"#999999"];
     }
     

@@ -10,7 +10,7 @@
 #import "RSFirstTypeCell.h"
 
 @interface RSFirstTypeTableCell()<UICollectionViewDelegate,UICollectionViewDataSource>
-
+@property (nonatomic,assign) CGFloat cellHei;
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @end
@@ -22,13 +22,23 @@
 
 - (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier{
     if (self == [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        
         [self setUI];
     }
     return self;
     
 }
++ (instancetype)deque:(UITableView *)tableView Style:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier cellHei:(CGFloat)cellHei{
+    RSFirstTypeTableCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
+    if (!cell) {
+        cell = [[RSFirstTypeTableCell alloc] initWithStyle:style reuseIdentifier:reuseIdentifier];
+        
+    }
+    return  cell;
+}
 - (void)setLotteryArr:(NSArray *)lotteryArr{
     _lotteryArr = lotteryArr;
+    _collectionView.height = lotteryArr.count/ 3 * 145;
     [_collectionView reloadData];
     
 }
@@ -40,7 +50,7 @@
     layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     layout.minimumInteritemSpacing = 0;
     layout.minimumLineSpacing = 0;
-    _collectionView  = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, k_WIDTH, 430) collectionViewLayout:layout];
+    _collectionView  = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, k_WIDTH, 450) collectionViewLayout:layout];
     _collectionView.scrollEnabled = NO;
     _collectionView.showsVerticalScrollIndicator = NO;
     _collectionView.showsHorizontalScrollIndicator = NO;
@@ -60,6 +70,12 @@
     cell.model = self.lotteryArr[indexPath.row];
     return cell;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+}
+
 
 
 - (void)awakeFromNib {

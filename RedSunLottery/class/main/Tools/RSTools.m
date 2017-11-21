@@ -76,4 +76,43 @@
     NSLog(@"%@",strParamer);
     return [self MD5:strParamer];
 }
+/**
+ 获取Window 最上层 rootVC
+ 
+ @return rootVC
+ */
+
++ (UIViewController *)getTopVC{
+    UIViewController *rootViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+    return [self topViewControllerWithRootViewController:rootViewController];
+}
+/**
+ 获取传入的控制器上的rootVC
+ 
+ @param rootViewController 传入的rootVC
+ @return rootVC
+ */
++ (UIViewController *)topViewControllerWithRootViewController:(UIViewController *)rootViewController{
+    if ([rootViewController isKindOfClass:[UITabBarController class]]) {
+        
+        UITabBarController *tabBarController = (UITabBarController *)rootViewController;
+        
+        return [self topViewControllerWithRootViewController:tabBarController.selectedViewController];
+        
+    } else if ([rootViewController isKindOfClass:[UINavigationController class]]) {
+        
+        UINavigationController* navigationController = (UINavigationController*)rootViewController;
+        
+        return [self topViewControllerWithRootViewController:navigationController.visibleViewController];
+        
+    } else if (rootViewController.presentedViewController) {
+        
+        UIViewController* presentedViewController = rootViewController.presentedViewController;
+        
+        return [self topViewControllerWithRootViewController:presentedViewController];
+        
+    } else {
+        return rootViewController;
+    }
+}
 @end

@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface RSFirstTypeTableCell : UITableViewCell
-
++ (instancetype)deque:(UITableView *)tableView Style:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier cellHei:(CGFloat)cellHei;
 @property (nonatomic, strong) NSArray *lotteryArr;
 
 @end

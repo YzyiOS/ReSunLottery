@@ -17,4 +17,11 @@
 + (NSString *)MD5:(NSString *)aStr;
 /** 对NSDictionary转换并加密 */
 + (NSString *)dicToMD5:(NSDictionary *)dic;
+/**
+ 获取Window 最上层 rootVC
+ 
+ @return rootVC
+ */
+
++ (UIViewController *)getTopVC;
 @end

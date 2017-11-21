@@ -8,7 +8,7 @@
 
 #import "RSBaseNavgationVController.h"
 
-@interface RSBaseNavgationVController ()<UIGestureRecognizerDelegate>
+@interface RSBaseNavgationVController ()<UIGestureRecognizerDelegate,UINavigationControllerDelegate>
 
 @end
 
@@ -18,6 +18,7 @@
     [super viewDidLoad];
     
     self.delegate = self;
+     [self _setNavAppearance];
     // Do any additional setup after loading the view.
 }
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -64,13 +65,16 @@
     //    UIImage *barImage = [[UIImage imageWithContentsOfFile:navBgImagePath] imageByResizeToSize:CGSizeMake(k_WIDTH, 64)];
     //    [self.navigationBar setBackgroundImage:barImage forBarMetrics:UIBarMetricsDefault];
     [self.navigationBar setShadowImage:[UIImage new]];
-    self.navigationBar.layer.shadowColor = klightTextColor.CGColor;
+    self.navigationBar.layer.shadowColor = K_RedTextColor.CGColor;
     self.navigationBar.layer.shadowOffset = CGSizeMake(0, 1);
     self.navigationBar.layer.shadowOpacity = 0.1;
     self.navigationBar.layer.shadowRadius = 1;
     
-    self.navigationBar.backgroundColor = K_NarColor;
-    self.navigationBar.translucent = NO;
+//    self.navigationBar.backgroundColor = K_RedTextColor;
+//    self.navigationBar.translucent = NO;
+    self.navigationBar.barTintColor = K_RedTextColor;
+//    self.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationBar.barStyle = UIStatusBarStyleLightContent;
 }
 
 - (void)didReceiveMemoryWarning {

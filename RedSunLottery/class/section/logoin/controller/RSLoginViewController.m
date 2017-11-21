@@ -66,13 +66,14 @@
     [paramer setObject:@"0" forKey:@"loginType"];
     [paramer setObject:[RSRsaEncryptor encryptString:_pwdTextFiled.text publicKey:RSRSAPubKey] forKey:@"password"];
     
-    [RSHttp postRequestURL:@"/api/user/login" params:paramer cache:NO successBlock:^(id responseDict) {
+    [RSHttp postRequestURL:[NSString stringWithFormat:@"%@%@",RSBaseMobileUrl,@"/api/user/login"] params:paramer cache:NO successBlock:^(id responseDict) {
         RSLog(@"%@",responseDict);
         [RSUserManager shareDataManager].userModel = [RSUserModel yy_modelWithJSON:responseDict[@"data"]];
         [[RSUserManager shareDataManager] setAccountWithAccountInfo:responseDict[@"data"]];
+        [[RSUserManager shareDataManager] saveKeyChainAccount:[RSUserManager shareDataManager].userModel.token password:[RSUserManager shareDataManager].userModel.key];
         [self dismissViewControllerAnimated:YES completion:nil];
     } failBlock:^(NSError *error) {
-        
+        RSLog(@"%@",error);
     }];
     
     

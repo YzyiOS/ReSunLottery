@@ -31,6 +31,7 @@
     _window.rootViewController = rootViewController;
     [[RSUserManager shareDataManager] loadPersonInfo];
     // 加载个人信息 (里面会判断是否登录)
+    [[RSUserManager shareDataManager] logoToken];
     
 }
 

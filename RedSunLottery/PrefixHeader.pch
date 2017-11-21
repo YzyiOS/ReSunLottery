@@ -24,5 +24,7 @@
     #import "RSHttp.h"
     #import "RSRsaEncryptor.h"
     #import "RSUserManager.h"
+    #import "RSAPI.h"
+    #import "SSKeychain.h"
 
 #endif /* PrefixHeader_pch */

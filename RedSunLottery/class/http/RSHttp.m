@@ -51,8 +51,8 @@ static AFHTTPSessionManager *_manager;          //post-get Manager
                                                      @"application/octet-stream",
                                                      @"application/zip", nil];
         
-        NSURL *baseUrl = [NSURL URLWithString:@"http://static.tuiqiuxiong.com"];
-        _manager = [[AFHTTPSessionManager alloc] initWithBaseURL:baseUrl];
+//        NSURL *baseUrl = [NSURL URLWithString:@"http://mobile.tuiqiuxiong.com"];
+        _manager = [[AFHTTPSessionManager alloc] init];
         _manager.requestSerializer = requestSerializer;
         _manager.responseSerializer = responseSerializer;
         [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;

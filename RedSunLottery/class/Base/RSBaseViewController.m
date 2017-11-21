@@ -35,7 +35,7 @@
     [super viewDidLoad];
     // 初始化 statusBarStyle
     self.automaticallyAdjustsScrollViewInsets = NO;
-    self.pcstatusBarStyle = UIStatusBarStyleDefault;
+//    self.pcstatusBarStyle = UIStatusBarStyleLightContent;
     [self setNeedsStatusBarAppearanceUpdate];
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
@@ -48,7 +48,7 @@
         return;
     }
     UILabel *titleLabel = [UILabel new];
-    titleLabel.attributedText = [[NSAttributedString alloc] initWithString:title attributes:@{NSForegroundColorAttributeName:K_NarTitleColor,NSFontAttributeName: [UIFont fontWithName:PINGFANG_SC_REGULAR size:18]}];
+    titleLabel.attributedText = [[NSAttributedString alloc] initWithString:title attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor],NSFontAttributeName: [UIFont fontWithName:PINGFANG_SC_REGULAR size:18]}];
     [titleLabel sizeToFit];
     [self.navigationItem setTitleView:titleLabel];
 }
