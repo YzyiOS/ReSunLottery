@@ -15,7 +15,7 @@
 
 
 #define K_BlockTextColor    [UIColor colorWithHexString:@"#333333"]//一级字体颜色
-
+#define K_77777BlockTextColor    [UIColor colorWithHexString:@"#777777"]//二级字体颜色
 #define K_RedTextColor      [UIColor colorWithHexString:@"#f63f3f"]//红色
 
 #define K_lightTextColor [UIColor colorWithHexString:@"#999999"]

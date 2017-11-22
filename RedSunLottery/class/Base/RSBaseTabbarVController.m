@@ -121,9 +121,9 @@
         
         // 设置TabBar title
         navigationVC.tabBarItem.title = title;
-        NSDictionary *normalAttr = @{NSForegroundColorAttributeName : [UIColor colorWithHexString:@"#bababa"]};
+        NSDictionary *normalAttr = @{NSForegroundColorAttributeName : [UIColor colorWithHexString:@"#787878"],NSFontAttributeName: [UIFont fontWithName:PINGFANG_SC_REGULAR size:10]};
         [navigationVC.tabBarItem setTitleTextAttributes:normalAttr forState:UIControlStateNormal];
-        NSDictionary *selectedAttr = @{NSForegroundColorAttributeName : [UIColor colorWithHexString:@"#E21616"]};
+        NSDictionary *selectedAttr = @{NSForegroundColorAttributeName : K_RedTextColor,NSFontAttributeName: [UIFont fontWithName:PINGFANG_SC_REGULAR size:10]};
         [navigationVC.tabBarItem setTitleTextAttributes:selectedAttr forState:UIControlStateSelected];
         
         // 设置TabBar image

@@ -33,6 +33,7 @@
 
 - (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
+    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
     self.navigationController.navigationBar.hidden = YES;
 }
 - (void)viewWillDisappear:(BOOL)animated{
@@ -43,7 +44,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationController.navigationBar.barStyle = UIStatusBarStyleDefault;
+    
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self.view addSubview:self.tableView];

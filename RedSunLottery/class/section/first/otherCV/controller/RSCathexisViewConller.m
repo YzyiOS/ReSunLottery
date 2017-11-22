@@ -16,7 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.titleView = [UIView new];
     // Do any additional setup after loading the view.
 }
 

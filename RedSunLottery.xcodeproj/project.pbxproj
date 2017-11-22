@@ -24,6 +24,13 @@
 		AC395F3F1FC449F10028F84E /* PeriodTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F3B1FC449F10028F84E /* PeriodTitleCell.m */; };
 		AC395F401FC449F10028F84E /* LotteryDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F3C1FC449F10028F84E /* LotteryDetailCell.m */; };
 		AC395F431FC449F80028F84E /* periodTitleModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F421FC449F80028F84E /* periodTitleModel.m */; };
+		AC395F461FC44D070028F84E /* RSBaseCathexisViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F451FC44D070028F84E /* RSBaseCathexisViewController.m */; };
+		AC395F491FC44DE30028F84E /* RSNarBtnCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F481FC44DE30028F84E /* RSNarBtnCollectionView.m */; };
+		AC395F501FC451BF0028F84E /* RSNarBtnCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F4E1FC451BF0028F84E /* RSNarBtnCollectionCell.m */; };
+		AC395F511FC451BF0028F84E /* RSNarBtnCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC395F4F1FC451BF0028F84E /* RSNarBtnCollectionCell.xib */; };
+		AC395F541FC46C890028F84E /* RSSSQVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F531FC46C890028F84E /* RSSSQVC.m */; };
+		AC395F5B1FC478D60028F84E /* RSSSQNumLabView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F5A1FC478D60028F84E /* RSSSQNumLabView.m */; };
+		AC395F5E1FC5900D0028F84E /* RSSSQSecvtionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC395F5D1FC5900D0028F84E /* RSSSQSecvtionView.m */; };
 		AC5344C31FBDE3EE003D358E /* RSFirstBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344C21FBDE3EE003D358E /* RSFirstBannerView.m */; };
 		AC5344D71FBDF5AF003D358E /* RSFirstTypeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC5344D51FBDF5AF003D358E /* RSFirstTypeCell.m */; };
 		AC5344D81FBDF5AF003D358E /* RSFirstTypeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC5344D61FBDF5AF003D358E /* RSFirstTypeCell.xib */; };
@@ -93,6 +100,19 @@
 		AC395F3E1FC449F10028F84E /* LotteryDetailCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LotteryDetailCell.h; sourceTree = "<group>"; };
 		AC395F411FC449F80028F84E /* periodTitleModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = periodTitleModel.h; sourceTree = "<group>"; };
 		AC395F421FC449F80028F84E /* periodTitleModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = periodTitleModel.m; sourceTree = "<group>"; };
+		AC395F441FC44D070028F84E /* RSBaseCathexisViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSBaseCathexisViewController.h; sourceTree = "<group>"; };
+		AC395F451FC44D070028F84E /* RSBaseCathexisViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSBaseCathexisViewController.m; sourceTree = "<group>"; };
+		AC395F471FC44DE30028F84E /* RSNarBtnCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSNarBtnCollectionView.h; sourceTree = "<group>"; };
+		AC395F481FC44DE30028F84E /* RSNarBtnCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSNarBtnCollectionView.m; sourceTree = "<group>"; };
+		AC395F4D1FC451BF0028F84E /* RSNarBtnCollectionCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSNarBtnCollectionCell.h; sourceTree = "<group>"; };
+		AC395F4E1FC451BF0028F84E /* RSNarBtnCollectionCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSNarBtnCollectionCell.m; sourceTree = "<group>"; };
+		AC395F4F1FC451BF0028F84E /* RSNarBtnCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSNarBtnCollectionCell.xib; sourceTree = "<group>"; };
+		AC395F521FC46C890028F84E /* RSSSQVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSSQVC.h; sourceTree = "<group>"; };
+		AC395F531FC46C890028F84E /* RSSSQVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSSQVC.m; sourceTree = "<group>"; };
+		AC395F591FC478D60028F84E /* RSSSQNumLabView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSSQNumLabView.h; sourceTree = "<group>"; };
+		AC395F5A1FC478D60028F84E /* RSSSQNumLabView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSSQNumLabView.m; sourceTree = "<group>"; };
+		AC395F5C1FC5900D0028F84E /* RSSSQSecvtionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSSQSecvtionView.h; sourceTree = "<group>"; };
+		AC395F5D1FC5900D0028F84E /* RSSSQSecvtionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSSQSecvtionView.m; sourceTree = "<group>"; };
 		AC5344C11FBDE3EE003D358E /* RSFirstBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstBannerView.h; sourceTree = "<group>"; };
 		AC5344C21FBDE3EE003D358E /* RSFirstBannerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFirstBannerView.m; sourceTree = "<group>"; };
 		AC5344D41FBDF5AF003D358E /* RSFirstTypeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFirstTypeCell.h; sourceTree = "<group>"; };
@@ -263,6 +283,10 @@
 				AC395F1D1FC319B50028F84E /* RSBaseCaiBallButton.m */,
 				AC395F291FC445640028F84E /* RSCathexisNarBtnView.h */,
 				AC395F2A1FC445640028F84E /* RSCathexisNarBtnView.m */,
+				AC395F441FC44D070028F84E /* RSBaseCathexisViewController.h */,
+				AC395F451FC44D070028F84E /* RSBaseCathexisViewController.m */,
+				AC395F471FC44DE30028F84E /* RSNarBtnCollectionView.h */,
+				AC395F481FC44DE30028F84E /* RSNarBtnCollectionView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -354,10 +378,75 @@
 		AC395F221FC328BF0028F84E /* otherCV */ = {
 			isa = PBXGroup;
 			children = (
+				AC395F551FC46CD60028F84E /* SSQ(双色球) */,
+				AC395F4A1FC4518E0028F84E /* controller */,
+				AC395F4B1FC4518E0028F84E /* model */,
+				AC395F4C1FC4518E0028F84E /* view */,
+			);
+			path = otherCV;
+			sourceTree = "<group>";
+		};
+		AC395F4A1FC4518E0028F84E /* controller */ = {
+			isa = PBXGroup;
+			children = (
 				AC395F261FC3A7FB0028F84E /* RSCathexisViewConller.h */,
 				AC395F271FC3A7FB0028F84E /* RSCathexisViewConller.m */,
 			);
-			path = otherCV;
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AC395F4B1FC4518E0028F84E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AC395F4C1FC4518E0028F84E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AC395F4D1FC451BF0028F84E /* RSNarBtnCollectionCell.h */,
+				AC395F4E1FC451BF0028F84E /* RSNarBtnCollectionCell.m */,
+				AC395F4F1FC451BF0028F84E /* RSNarBtnCollectionCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		AC395F551FC46CD60028F84E /* SSQ(双色球) */ = {
+			isa = PBXGroup;
+			children = (
+				AC395F561FC46CD60028F84E /* controller */,
+				AC395F571FC46CD60028F84E /* model */,
+				AC395F581FC46CD60028F84E /* view */,
+			);
+			path = "SSQ(双色球)";
+			sourceTree = "<group>";
+		};
+		AC395F561FC46CD60028F84E /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC395F521FC46C890028F84E /* RSSSQVC.h */,
+				AC395F531FC46C890028F84E /* RSSSQVC.m */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		AC395F571FC46CD60028F84E /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		AC395F581FC46CD60028F84E /* view */ = {
+			isa = PBXGroup;
+			children = (
+				AC395F5C1FC5900D0028F84E /* RSSSQSecvtionView.h */,
+				AC395F5D1FC5900D0028F84E /* RSSSQSecvtionView.m */,
+				AC395F591FC478D60028F84E /* RSSSQNumLabView.h */,
+				AC395F5A1FC478D60028F84E /* RSSSQNumLabView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 		AC5344BC1FBDDF37003D358E /* model */ = {
@@ -651,6 +740,7 @@
 				ACB9D81F1FB9CBA30019054F /* RSFindPwdViewController.xib in Resources */,
 				AC1942491FB49B0500625C56 /* Main.storyboard in Resources */,
 				ACB9D8251FBB30420019054F /* private_key.p12 in Resources */,
+				AC395F511FC451BF0028F84E /* RSNarBtnCollectionCell.xib in Resources */,
 				ACC25D931FB6CF3900F7DF3A /* RSLoginViewController.xib in Resources */,
 				ACB9D8261FBB30420019054F /* public_key.der in Resources */,
 				ACB9D81A1FB9BB910019054F /* RSRegisViewController.xib in Resources */,
@@ -718,16 +808,19 @@
 				AC395F111FBF3E150028F84E /* RSFirstLotteryModel.m in Sources */,
 				ACB9D81E1FB9CBA30019054F /* RSFindPwdViewController.m in Sources */,
 				AC395F141FBF415A0028F84E /* RSFirstBannerModel.m in Sources */,
+				AC395F461FC44D070028F84E /* RSBaseCathexisViewController.m in Sources */,
 				ACB9D8111FB887950019054F /* RSHttp.m in Sources */,
 				ACC25D6B1FB69C0100F7DF3A /* RSTabBar.m in Sources */,
 				ACF552911FBDDBD80012B5EC /* UIView+SDExtension.m in Sources */,
 				AC395F1E1FC319B50028F84E /* RSBaseCaiBallButton.m in Sources */,
 				ACC25D651FB6987500F7DF3A /* RSBaseNavgationVController.m in Sources */,
+				AC395F491FC44DE30028F84E /* RSNarBtnCollectionView.m in Sources */,
 				ACF5528E1FBDDBD80012B5EC /* TAPageControl.m in Sources */,
 				AC395F431FC449F80028F84E /* periodTitleModel.m in Sources */,
 				AC1942511FB49B0500625C56 /* main.m in Sources */,
 				AC395F401FC449F10028F84E /* LotteryDetailCell.m in Sources */,
 				ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */,
+				AC395F541FC46C890028F84E /* RSSSQVC.m in Sources */,
 				AC395F3F1FC449F10028F84E /* PeriodTitleCell.m in Sources */,
 				ACC25D711FB6C6D100F7DF3A /* RSBaseViewController.m in Sources */,
 				ACB9D82B1FBB37AA0019054F /* RSRsaEncryptor.m in Sources */,
@@ -740,7 +833,9 @@
 				AC5344C31FBDE3EE003D358E /* RSFirstBannerView.m in Sources */,
 				ACC25D921FB6CF3900F7DF3A /* RSLoginViewController.m in Sources */,
 				ACF552901FBDDBD80012B5EC /* SDCycleScrollView.m in Sources */,
+				AC395F501FC451BF0028F84E /* RSNarBtnCollectionCell.m in Sources */,
 				ACFD40E51FBC890A00E4BAB3 /* RSUserManager.m in Sources */,
+				AC395F5B1FC478D60028F84E /* RSSSQNumLabView.m in Sources */,
 				AC395F1B1FC318590028F84E /* RSCathexisManeger.m in Sources */,
 				ACF5528F1FBDDBD80012B5EC /* SDCollectionViewCell.m in Sources */,
 				AC395F281FC3A7FB0028F84E /* RSCathexisViewConller.m in Sources */,
@@ -752,6 +847,7 @@
 				AC5344DB1FBDF609003D358E /* RSFirstTypeTableCell.m in Sources */,
 				ACC25D681FB698E800F7DF3A /* RSBaseTabbarVController.m in Sources */,
 				AC395F171FC2F7480028F84E /* RSBannerWebVC.m in Sources */,
+				AC395F5E1FC5900D0028F84E /* RSSSQSecvtionView.m in Sources */,
 				ACB9D8191FB9BB910019054F /* RSRegisViewController.m in Sources */,
 				ACC25D791FB6CA7700F7DF3A /* RSSecendViewController.m in Sources */,
 			);

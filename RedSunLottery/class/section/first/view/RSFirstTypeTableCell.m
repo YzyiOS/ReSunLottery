@@ -8,6 +8,7 @@
 
 #import "RSFirstTypeTableCell.h"
 #import "RSFirstTypeCell.h"
+#import "RSSSQVC.h"
 
 @interface RSFirstTypeTableCell()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic,assign) CGFloat cellHei;
@@ -72,7 +73,9 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    RSSSQVC *vc = [[RSSSQVC alloc] init];
     
+    [[RSTools getTopVC].navigationController pushViewController:vc animated:YES];
     
 }
 
