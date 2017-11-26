@@ -9,9 +9,10 @@
 #import "RSBaseCathexisViewController.h"
 #import "RSNarBtnCollectionView.h"
 
-@interface RSBaseCathexisViewController ()
+@interface RSBaseCathexisViewController ()<RSNarBtnCollectionViewDelegate>
 
 @property (nonatomic, strong) UIButton *btnNar;
+@property (nonatomic, strong) RSNarBtnCollectionView *vc;
 
 @end
 
@@ -24,23 +25,37 @@
     [self setUI];
     // Do any additional setup after loading the view.
 }
+- (void)setArrNarBtnModel:(NSArray *)arrNarBtnModel{
+    _arrNarBtnModel = arrNarBtnModel;
+    [_btnNar setTitle:self.arrNarBtnModel[0] forState:UIControlStateNormal];
+}
 - (void)setUI{
     _btnNar = [UIButton buttonWithType:UIButtonTypeCustom];
     _btnNar.frame = CGRectMake(0, 0, k_WIDTH - 150, 30);
-    _btnNar.titleLabel.font = RSFont(18);
+    _btnNar.titleLabel.font = RSFont(22);
     [_btnNar setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-    [_btnNar setTitle:@"竞足-混投" forState:UIControlStateNormal];
+    [_btnNar setTitle:self.arrNarBtnModel[0] forState:UIControlStateNormal];
     [_btnNar addTarget:self action:@selector(btnNarCilck) forControlEvents:UIControlEventTouchUpInside];
     self.navigationItem.titleView = _btnNar;
-    
+    _vc = [[RSNarBtnCollectionView alloc] init];
+    _vc.delegate = self;
 }
 - (void)btnNarCilck{
-    RSNarBtnCollectionView *vc = [[RSNarBtnCollectionView alloc] init];
-    vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
-    [self presentViewController:vc animated:YES completion:nil];
     
+    _vc.modelArr = self.arrNarBtnModel;
+    _vc.modalPresentationStyle = UIModalPresentationOverCurrentContext;
+    for (UIView *view in self.view.subviews) {
+        if (view == _vc.view) {
+            return;
+        }
+    }
+    [self.view addSubview:_vc.view];
 }
-
+- (void)backSelectNum:(NSInteger)num{
+    self.selectNum = num;
+    
+    [_btnNar setTitle:_vc.modelArr[num - 1] forState:UIControlStateNormal];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

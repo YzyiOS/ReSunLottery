@@ -7,7 +7,10 @@
 //
 
 #import "RSBaseCathexisViewController.h"
-
+typedef NS_ENUM(NSUInteger, RSPleyType) {//玩法
+    RSPlayType_SSQ = 1010,//双色球
+    
+};
 @interface RSSSQVC : RSBaseCathexisViewController
 
 @end

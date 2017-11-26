@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol RSNarBtnCollectionViewDelegate
+- (void)backSelectNum:(NSInteger)num;
+
+@end
+
+
+
 @interface RSNarBtnCollectionView : UIViewController
 
+//+ (RSNarBtnCollectionView *)sharedInstance;
 @property (nonatomic, copy) NSArray  *modelArr;
+
+
+@property (nonatomic, weak) id<RSNarBtnCollectionViewDelegate> delegate;
+
 
 @end

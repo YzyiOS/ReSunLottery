@@ -17,6 +17,8 @@
 @interface RSThirdViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic)   UITableView               *tableView;
 
+@property (nonatomic, strong) NSArray *arrData;
+
 @end
 
 @implementation RSThirdViewController
@@ -49,7 +51,7 @@
 #pragma mark - UITableViewFunc -
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
-    return 5;
+    return _arrData.count;
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
@@ -60,7 +62,7 @@
     if (indexPath.row == 0) {
         
         PeriodTitleCell *titleCell = [tableView dequeueReusableCellWithIdentifier:ID_PeriodTitleCell forIndexPath:indexPath];
-        titleCell.periodModel = [periodTitleModel new];
+        titleCell.periodModel = _arrData[indexPath.section];
         return titleCell;
     }
     
@@ -91,8 +93,10 @@
 #pragma mark - NetFunc -
 - (void)loadDataOfPeriod {
     
-    [RSHttp getRequestURL:@"/api/kj/get" params:nil cache:NO successBlock:^(id responseDict) {
-        
+    [RSHttp getRequestURL:[NSString stringWithFormat:@"%@%@",RSBaseMobileUrl,@"/api/kj/get"] params:nil cache:NO successBlock:^(id responseDict) {
+        RSLog(@"%@",responseDict);
+        _arrData = [NSArray yy_modelArrayWithClass:[periodTitleModel class] json:responseDict[@"data"]];
+        [self.tableView reloadData];
     } failBlock:^(NSError *error) {
         
     }];

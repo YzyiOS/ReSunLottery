@@ -9,24 +9,47 @@
 #import "RSNarBtnCollectionView.h"
 #import "RSNarBtnCollectionCell.h"
 
-@interface RSNarBtnCollectionView ()<UICollectionViewDelegate,UICollectionViewDataSource>
+@interface RSNarBtnCollectionView ()<UICollectionViewDelegate,UICollectionViewDataSource,ProtocolDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
+
+@property (nonatomic, assign) NSInteger selectNum;//记录选中的按钮
 
 @end
 
 @implementation RSNarBtnCollectionView
 
+//#pragma mark - 创建单例
+//+ (RSNarBtnCollectionView *)sharedInstance{
+//    static RSNarBtnCollectionView *vc;
+//    static dispatch_once_t onceToken;
+//    dispatch_once(&onceToken, ^{
+//        vc = [[RSNarBtnCollectionView alloc] init];
+//    });
+//
+//    return vc;
+//}
 - (void)viewDidLoad {
     [super viewDidLoad];
+    _selectNum = 1;
+//    self.view.frame = CGRectMake(0, 64, k_WIDTH, k_HEIGHT);
     self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.5];
-    [self.view addSubview:self.collectionView];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithActionBlock:^(id  _Nonnull sender) {
+        [self.view removeFromSuperview];
+    }];
+    
+    [self.view addGestureRecognizer:tap];
     // Do any additional setup after loading the view.
+}
+- (void)tapClick:(UITapGestureRecognizer *)tap{
+    
+    
 }
 - (void)setModelArr:(NSArray *)modelArr{
     _modelArr = modelArr;
     
-    [self.collectionView reloadData];
+    [self.view addSubview:self.collectionView];
     
 }
 
@@ -37,13 +60,13 @@
         UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
         layout.itemSize =CGSizeMake(w_width, 41);
         layout.sectionInset = UIEdgeInsetsMake(20, 0, 0, 20);
-        layout.minimumInteritemSpacing = 15;
-        layout.minimumLineSpacing = 14;
-        _collectionView  = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 0, k_WIDTH, 450) collectionViewLayout:layout];
+        layout.minimumInteritemSpacing = 0;
+        layout.minimumLineSpacing = 0;
+        _collectionView  = [[UICollectionView alloc] initWithFrame:CGRectMake(0, 64, k_WIDTH, _modelArr.count * 45) collectionViewLayout:layout];
         _collectionView.scrollEnabled = NO;
         _collectionView.showsVerticalScrollIndicator = NO;
         _collectionView.showsHorizontalScrollIndicator = NO;
-        _collectionView.backgroundColor = [UIColor clearColor];
+        _collectionView.backgroundColor = [UIColor whiteColor];
         _collectionView.delegate = self;
         _collectionView.dataSource = self;
         [_collectionView registerNib:[UINib nibWithNibName:NSStringFromClass([RSNarBtnCollectionCell class]) bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"RSNarBtnCollectionCell"];
@@ -57,10 +80,25 @@
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
     RSNarBtnCollectionCell *cell= [collectionView dequeueReusableCellWithReuseIdentifier:@"RSNarBtnCollectionCell" forIndexPath:indexPath];
+    if (indexPath.row + 1 == _selectNum ) {
+        cell.selectBtn = YES;
+    }else{
+        cell.selectBtn = NO;
+    }
     
+    [cell setUIIndepathNum:indexPath.row + 1];
+    
+    cell.titleStr = self.modelArr[indexPath.row];
+    cell.delegate = self;
     return cell;
 }
-
+- (void)backSelectBtn:(NSInteger)num{
+    _selectNum = num;
+    [self.delegate backSelectNum:num];
+    [self.collectionView reloadData];
+    
+    [self.view removeFromSuperview];
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

@@ -17,10 +17,15 @@
 + (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
     
     return @{
-             @"lname"             :   @"lname",
-             @"ktime"             :   @"ktime",
-             @"pname"             :   @"pname",
+             @"bf"             :   @"bf",
+             @"gname"             :   @"gname",
+             @"hname"             :   @"hname",
              @"kcode"             :   @"kcode",
+             @"ktime"             :   @"ktime",
+             @"lid"             :   @"lid",
+             @"lname"             :   @"lname",
+             @"pid"             :   @"pid",
+             @"pname"             :   @"pname",
              };
 }
 

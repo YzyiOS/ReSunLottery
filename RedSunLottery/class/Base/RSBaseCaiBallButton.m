@@ -31,15 +31,17 @@
     return self;
 }
 - (void)setUI{
-    UIBezierPath *maskPath = [UIBezierPath bezierPathWithRoundedRect:self.bounds byRoundingCorners:UIRectCornerBottomLeft | UIRectCornerTopLeft | UIRectCornerTopRight | UIRectCornerBottomRight cornerRadii:CGSizeMake(self.width, self.height)];
-    CAShapeLayer *maskLayer = [[CAShapeLayer alloc] init];
-    maskLayer.frame = self.bounds;
-    maskLayer.path = maskPath.CGPath;
-    maskLayer.borderWidth = 1;
-    maskLayer.borderColor = _nalColor.CGColor;
-    self.layer.mask = maskLayer;
-    [self setTitleColor:_selectColor forState:UIControlStateNormal];
+
+    self.layer.cornerRadius = self.height / 2;
+    self.layer.borderWidth = 1;
+    self.layer.borderColor = _nalColor.CGColor;
+    self.layer.masksToBounds = YES;
+//    [self setBackgroundColor:[UIColor redColor]];
+    [self setTitle:_strTitle forState:UIControlStateNormal];
+    [self setTitleColor:_nalColor forState:UIControlStateNormal];
+    
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
+    [self setBackgroundImage:[UIImage imageWithColor:_nalColor] forState:UIControlStateSelected];
 }
 
 

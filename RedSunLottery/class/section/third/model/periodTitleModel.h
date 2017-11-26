@@ -9,9 +9,16 @@
 #import <Foundation/Foundation.h>
 
 @interface periodTitleModel : NSObject
-@property (copy, nonatomic)  NSString             *lname;
-@property (copy, nonatomic)  NSString             *ktime;
-@property (copy, nonatomic)  NSString             *pname;
+@property (copy, nonatomic)  NSString             *bf;
+@property (copy, nonatomic)  NSString             *gname;
+@property (copy, nonatomic)  NSString             *hname;
 @property (copy, nonatomic)  NSString             *kcode;
+@property (nonatomic, copy)  NSString             *ktime;
+@property (nonatomic, copy)  NSString             *lid;
+@property (nonatomic, copy)  NSString             *lname;
+@property (nonatomic, copy)  NSString             *pid;
+@property (nonatomic, copy)  NSString             *pname;
+
+
 
 @end

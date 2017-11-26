@@ -34,6 +34,11 @@
     [self buildElements];
     
     [self addLayOut];
+    
+    _periodModel  = periodModel;
+    self.labData.text = periodModel.ktime;
+    self.labPeriod.text = periodModel.pname;
+    self.labName.text = periodModel.lname;
 }
 
 - (void)buildElements {

@@ -13,4 +13,6 @@
 NSString *const     RSBaseStaticUrl               = @"http://static.tuiqiuxiong.com";//json文件
 NSString *const     RSBaseMobileUrl               = @"http://mobile.tuiqiuxiong.com";
 
+NSString *const     RSFirstURLAPI                 = @"/home/home.json?dfgdfg";
+
 @end

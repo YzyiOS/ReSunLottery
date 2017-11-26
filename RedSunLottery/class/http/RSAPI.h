@@ -14,4 +14,6 @@ FOUNDATION_EXTERN NSString *const RSBaseStaticUrl;
 
 FOUNDATION_EXTERN NSString *const RSBaseMobileUrl;
 
+FOUNDATION_EXTERN NSString *const RSFirstURLAPI;
+
 @end

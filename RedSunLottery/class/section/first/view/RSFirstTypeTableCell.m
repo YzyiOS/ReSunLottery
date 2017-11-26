@@ -9,6 +9,8 @@
 #import "RSFirstTypeTableCell.h"
 #import "RSFirstTypeCell.h"
 #import "RSSSQVC.h"
+#import "RSFirstLotteryModel.h"
+#import "RSDaLeTouVC.h"
 
 @interface RSFirstTypeTableCell()<UICollectionViewDelegate,UICollectionViewDataSource>
 @property (nonatomic,assign) CGFloat cellHei;
@@ -73,9 +75,26 @@
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    RSSSQVC *vc = [[RSSSQVC alloc] init];
+    RSFirstLotteryModel *model = self.lotteryArr[indexPath.row];
     
-    [[RSTools getTopVC].navigationController pushViewController:vc animated:YES];
+    switch ([model.lid integerValue]) {
+        case 1010:{
+            RSSSQVC *vc = [[RSSSQVC alloc] init];
+            
+            [[RSTools getTopVC].navigationController pushViewController:vc animated:YES];
+        }
+            break;
+        case 1500:{
+            RSDaLeTouVC *vc = [[RSDaLeTouVC alloc] init];
+            
+            [[RSTools getTopVC].navigationController pushViewController:vc animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    
     
 }
 

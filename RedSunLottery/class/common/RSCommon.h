@@ -42,4 +42,7 @@
 #define PINGFANG_SC_LIGHT       @"PingFangSC-Light"
 #define PINGFANG_SC_MEDIUM      @"PingFangSC-Medium"
 
+#define RSImage(imgName)  [UIImage imageNamed:imgName]
+
+
 #endif /* RSCommon_h */

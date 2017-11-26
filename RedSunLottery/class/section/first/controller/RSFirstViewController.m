@@ -50,11 +50,11 @@
     [self.view addSubview:self.tableView];
     [self setUI];
     [self getData];
-    
-    // Do any additional setup after loading the view.
+    ///home/home.json
+    // Do any additional setup after loading the view./jc/match/jczqResult.json?dfgdfg
 }
 - (void)getData{
-    [RSHttp getRequestURL:[NSString stringWithFormat:@"%@%@",RSBaseStaticUrl,@"/home/home.json"] params:@{} cache:NO successBlock:^(id responseDict) {
+    [RSHttp getRequestURL:[NSString stringWithFormat:@"%@%@",RSBaseStaticUrl,RSFirstURLAPI] params:@{} cache:NO successBlock:^(id responseDict) {
         _lotteryArr = [NSArray yy_modelArrayWithClass:[RSFirstLotteryModel class] json:responseDict[@"lottery"]];
         _bannerArr = [NSArray yy_modelArrayWithClass:[RSFirstBannerModel class] json:responseDict[@"banner"]];
         _bannerView.bannerArr = _bannerArr;

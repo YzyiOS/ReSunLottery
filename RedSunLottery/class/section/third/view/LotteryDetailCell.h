@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM(NSUInteger, LotteryType) {
-    LotteryTypeDoubleChromospheric = 0,
-    LotteryTypeFiveIn,
-    LotteryTypeVictory,
-    LotteryTypeFootBall,
-    LotteryTypeBasktBall
+    LotteryTypeDoubleChromospheric = 0,//双色球
+    LotteryTypeFiveIn,//11选五
+    LotteryTypeVictory,//胜负彩
+    LotteryTypeFootBall,//竞彩足球
+    LotteryTypeBasktBall//竞彩篮球
 };
 @interface LotteryDetailCell : UITableViewCell
 @property (assign, nonatomic)  LotteryType          lotteryType;

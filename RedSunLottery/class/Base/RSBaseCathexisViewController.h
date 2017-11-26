@@ -11,5 +11,6 @@
 @interface RSBaseCathexisViewController : RSBaseViewController
 
 @property (nonatomic, copy) NSArray *arrNarBtnModel;
+@property (nonatomic, assign) NSInteger selectNum;
 
 @end

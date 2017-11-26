@@ -69,6 +69,7 @@
     if (!_lineView) {
         _lineView = [[UIView alloc] init];
         _lineView.backgroundColor = K_GRAY_BG_COLOR;
+        _lineView.alpha = 0.5;
     }
     return _lineView;
 }
@@ -85,16 +86,41 @@
 - (RSSSQNumLabView *)labNumView{
     if (!_labNumView) {
         _labNumView = [[RSSSQNumLabView alloc] init];
-        _labNumView.arrModel = @[@"",@"",@"",@"",@"",@"",@""];
-        
     }
     return _labNumView;
 }
 -(UIButton *)btn{
     if (!_btn) {
         _btn = [UIButton buttonWithType:UIButtonTypeCustom];
+        [_btn setImage:RSImage(@"particulars_icon_unfurled") forState:UIControlStateNormal];
+        [_btn setImage:RSImage(@"particulars_icon_pack") forState:UIControlStateSelected];
+        [_btn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _btn;
+}
+- (void)setZsModel:(RSSSQZSModel *)zsModel{
+    _zsModel = zsModel;
+    self.labTime.text = [NSString stringWithFormat:@"第%@ %@截止",zsModel.pname,zsModel.etime];
+    self.labBonus.text = zsModel.gc;
+}
+- (void)setLsModel:(RSSSQLSModel *)lsModel{
+    _lsModel = lsModel;
+    if ([lsModel.kcode isEqualToString:@"等待开奖."]) {
+        self.labNumView.arrModel = [RSTools backKcodeModel:@"00,00,00,00,00|00,00"];
+    }else{
+        
+        self.labNumView.arrModel = [RSTools backKcodeModel:lsModel.kcode];
+    }
+ 
+    
+}
+- (void)setSelect:(BOOL)select{
+    _select = select;
+    self.btn.selected = select;
+}
+- (void)clickBtn:(UIButton *)selectBtn{
+    self.btn.selected = !self.btn.selected;
+    self.selectbtnType(self.btn.selected);
 }
 - (void)setLayoutView{
     [self.labTime mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -113,7 +139,7 @@
         make.top.mas_offset(45);
         make.left.mas_equalTo(self.mas_left);
         make.right.mas_equalTo(self.mas_right);
-        make.height.offset(0.3);
+        make.height.offset(1);
     }];
     [self.labLottery mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.mas_equalTo(self.labTime.mas_left);
@@ -128,8 +154,8 @@
     }];
     [self.btn mas_makeConstraints:^(MASConstraintMaker *make) {
         make.right.mas_equalTo(self.mas_right).offset(-15);
-        make.centerX.mas_equalTo(self.labNumView.mas_centerX);
-        make.width.height.mas_offset(10);
+        make.centerY.mas_equalTo(self.labNumView.mas_centerY);
+        make.width.height.mas_offset(20);
     }];
     
 }

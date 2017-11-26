@@ -8,6 +8,7 @@
 
 #import "RSTools.h"
 #import <CommonCrypto/CommonCrypto.h>
+#import "RSkCodeModel.h"
 
 @implementation RSTools
 
@@ -23,7 +24,7 @@
 /**
  *  对字符串进行MD5加密
  *
- *  @param str 需要转换的字符串
+ *  @param aStr 需要转换的字符串
  *
  *  @return 转化的字符串
  *
@@ -48,7 +49,7 @@
 /**
  *  对字符串进行MD5加密
  *
- *  @param  需要转换的字符串
+ *  @param  dic
  *
  *  @return 转化的字符串
  *
@@ -114,5 +115,56 @@
     } else {
         return rootViewController;
     }
+}
+
+//比较与当前时间的大小  日期格式为2016-08-14 08：46：20
++ (BOOL)compareWithDate:(NSString*)endDate
+{
+    NSInteger aa = 0;
+    NSDateFormatter *dateformater = [[NSDateFormatter alloc] init];
+    [dateformater setDateFormat:@"yyyy-MM-dd HH:mm:ss"];
+    NSDate *dta = [NSDate date];
+    NSDate *dtb = [[NSDate alloc] init];
+    NSString *DateTime = [dateformater stringFromDate:dta];
+    dta = [dateformater dateFromString:DateTime];
+    dtb = [dateformater dateFromString:endDate];
+    NSComparisonResult result = [dta compare:dtb];
+    if ((result=NSOrderedSame))
+    {
+        //        相等
+        aa=1;
+    }else if ((result=NSOrderedAscending))
+    {
+        //endDate比NowDate大
+        aa=1;
+    }else if ((result=NSOrderedDescending))
+    {
+        //endDate比NowDate小
+        aa=0;
+        
+    }
+    
+    return aa;
+}
+//把返回的开奖号换成数组，并添加颜色
++ (NSArray *)backKcodeModel:(NSString *)kcode{
+    NSArray *all = [kcode componentsSeparatedByString:@"|"];//根据|分割成两个数组
+    NSArray *red = [all[0] componentsSeparatedByString:@","];//把红色数字拿出来
+    NSMutableArray *backArr = [[NSMutableArray alloc] initWithCapacity:0];
+    for (int i =0 ; i < red.count; i ++) {
+        RSkCodeModel *model = [[RSkCodeModel alloc] init];
+        model.numColor = [UIColor colorWithHexString:@"#FF2C55"];
+        model.num = red[i];
+        [backArr addObject:model];
+    }
+    NSArray *blue = [all[1] componentsSeparatedByString:@","];
+    for (int i = 0; i < blue.count; i ++) {
+        RSkCodeModel *model = [[RSkCodeModel alloc] init];
+        model.numColor = [UIColor colorWithHexString:@"#177FFC"];
+        model.num = blue[i];
+        [backArr addObject:model];
+    }
+    
+    return backArr;
 }
 @end

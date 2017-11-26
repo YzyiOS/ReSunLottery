@@ -24,4 +24,9 @@
  */
 
 + (UIViewController *)getTopVC;
+//比较与当前时间的大小  日期格式为2016-08-14 08：46：20
++ (BOOL)compareWithDate:(NSString*)endDate;
+//把返回的开奖号换成数组，并添加颜色
++ (NSArray *)backKcodeModel:(NSString *)kcode;
+
 @end
