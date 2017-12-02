@@ -13,6 +13,7 @@
 @property (strong, nonatomic)   UILabel                  *labData;
 @property (strong, nonatomic)   UILabel                  *labPeriod;      // 期次
 @property (strong, nonatomic)   UIImageView              *imgrol;
+@property (nonatomic, strong)   UIView                   *lineView;
 
 @end
 
@@ -47,6 +48,7 @@
     [self.contentView addSubview:self.imgrol];
     [self.contentView addSubview:self.labPeriod];
     [self.contentView addSubview:self.labData];
+    [self.contentView addSubview:self.lineView];
 }
 
 
@@ -55,7 +57,9 @@
     if (!_labName) {
         _labName = [UILabel new];
         _labName.text = @"测试";
-        _labName.font = [UIFont systemFontOfSize:16];
+        _labName.font = RSFont(16);
+        _labName.textColor = K_BlockTextColor;
+
     }
     return _labName;
 }
@@ -64,7 +68,9 @@
     if (!_labPeriod) {
         _labPeriod = [UILabel new];
         _labPeriod.text = @"17105期";
-        _labPeriod.font = [UIFont systemFontOfSize:14];
+        _labPeriod.font = RSFont(14);
+        _labPeriod.textColor = K_77777BlockTextColor;
+        
     }
     return _labPeriod;
 }
@@ -73,7 +79,8 @@
     if (!_labData) {
         _labData = [UILabel new];
         _labData.text = @"2017-11-02 周四";
-        _labData.font = [UIFont systemFontOfSize:14];
+        _labData.font = RSFont(14);
+        _labData.textColor = K_77777BlockTextColor;
     }
     return _labData;
 }
@@ -84,7 +91,13 @@
     }
     return _imgrol;
 }
-
+- (UIView *)lineView{
+    if (!_lineView) {
+        _lineView = [[UIView alloc] init];
+        _lineView.backgroundColor = K_GRAY_BG_COLOR;
+    }
+    return _lineView;
+}
 - (void)addLayOut {
     
     [self.labName mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -103,6 +116,12 @@
     [self.labData mas_makeConstraints:^(MASConstraintMaker *make) {
         make.trailing.mas_equalTo(self.labPeriod.mas_leading).offset(-15);
         make.centerY.mas_equalTo(self.contentView);
+    }];
+    [self.lineView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(self.labName.mas_left);
+        make.right.mas_equalTo(self.contentView.mas_right);
+        make.bottom.mas_equalTo(self.contentView.mas_bottom);
+        make.height.mas_offset(1);
     }];
 }
 

@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		371B1A5FE0767CDB2608C14A /* libPods-RedSunLottery.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C600D053A7C8CC4B6F28FB99 /* libPods-RedSunLottery.a */; };
+		AC0518B61FD0429E00596B12 /* RSScorePeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0518B51FD0429E00596B12 /* RSScorePeriod.m */; };
+		AC0518B91FD051C800596B12 /* RSMatchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0518B81FD051C800596B12 /* RSMatchModel.m */; };
+		AC1750051FD1073300C8B812 /* RSOtherKaiJiangVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1750041FD1073300C8B812 /* RSOtherKaiJiangVC.m */; };
+		AC1750081FD1148000C8B812 /* RSOtherKaiJiangView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1750071FD1148000C8B812 /* RSOtherKaiJiangView.m */; };
+		AC17500B1FD1335300C8B812 /* RSKaiJiangManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC17500A1FD1335300C8B812 /* RSKaiJiangManager.m */; };
+		AC17500E1FD1779E00C8B812 /* RSSFPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC17500D1FD1779E00C8B812 /* RSSFPViewController.m */; };
+		AC1750111FD17CA300C8B812 /* RSSFPViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1750101FD17CA300C8B812 /* RSSFPViewCell.m */; };
+		AC1750151FD2430600C8B812 /* RSScoreHttpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1750141FD2430600C8B812 /* RSScoreHttpManager.m */; };
 		AC1942431FB49B0500625C56 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC1942421FB49B0500625C56 /* AppDelegate.m */; };
 		AC1942491FB49B0500625C56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC1942471FB49B0500625C56 /* Main.storyboard */; };
 		AC19424B1FB49B0500625C56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC19424A1FB49B0500625C56 /* Assets.xcassets */; };
@@ -39,6 +47,13 @@
 		AC686E1E1FC9A93600A00187 /* RSSSQLSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E1D1FC9A93600A00187 /* RSSSQLSModel.m */; };
 		AC686E211FC9BE8A00A00187 /* RSkCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E201FC9BE8A00A00187 /* RSkCodeModel.m */; };
 		AC686E271FCAEAD100A00187 /* RSDaLeTouVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E261FCAEAD100A00187 /* RSDaLeTouVC.m */; };
+		AC686E2A1FCC220E00A00187 /* RSFooter_BasktLotteryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E291FCC220E00A00187 /* RSFooter_BasktLotteryVC.m */; };
+		AC686E2D1FCC29E100A00187 /* RSFooter_BasktBallModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E2C1FCC29E100A00187 /* RSFooter_BasktBallModel.m */; };
+		AC686E301FCC2A3E00A00187 /* RSFooter_BasBallValueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E2F1FCC2A3E00A00187 /* RSFooter_BasBallValueModel.m */; };
+		AC686E331FCC3F9000A00187 /* RSLottertFooter_BascktSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E321FCC3F9000A00187 /* RSLottertFooter_BascktSectionView.m */; };
+		AC686E3B1FCC558C00A00187 /* RSFooter_BasktBall.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E3A1FCC558C00A00187 /* RSFooter_BasktBall.m */; };
+		AC686E3E1FCD9FF100A00187 /* RSScoreTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E3D1FCD9FF000A00187 /* RSScoreTableCell.m */; };
+		AC686E411FCDC12B00A00187 /* RSUserSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = AC686E401FCDC12A00A00187 /* RSUserSectionView.m */; };
 		ACB4FF281FC6847000536074 /* RSSQiuFirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB4FF271FC6847000536074 /* RSSQiuFirstCell.m */; };
 		ACB4FF371FC7D71B00536074 /* RSSSQiuSection.m in Sources */ = {isa = PBXBuildFile; fileRef = ACB4FF351FC7D71B00536074 /* RSSSQiuSection.m */; };
 		ACB4FF381FC7D71B00536074 /* RSSSQiuSection.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACB4FF361FC7D71B00536074 /* RSSSQiuSection.xib */; };
@@ -64,6 +79,12 @@
 		ACC25D7F1FB6CA9B00F7DF3A /* RSFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D7E1FB6CA9B00F7DF3A /* RSFourthViewController.m */; };
 		ACC25D921FB6CF3900F7DF3A /* RSLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACC25D901FB6CF3900F7DF3A /* RSLoginViewController.m */; };
 		ACC25D931FB6CF3900F7DF3A /* RSLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ACC25D911FB6CF3900F7DF3A /* RSLoginViewController.xib */; };
+		ACEF19731FCDC48800C1D0E3 /* RSWinLoseColorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF19721FCDC48800C1D0E3 /* RSWinLoseColorVC.m */; };
+		ACEF19761FCDC77D00C1D0E3 /* RSWinLoseColorSectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF19751FCDC77D00C1D0E3 /* RSWinLoseColorSectionView.m */; };
+		ACEF19791FCDCD9500C1D0E3 /* RSWinLoseColorCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF19781FCDCD9500C1D0E3 /* RSWinLoseColorCell.m */; };
+		ACEF197C1FCDCE1F00C1D0E3 /* RSWinLoseNumCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF197B1FCDCE1F00C1D0E3 /* RSWinLoseNumCellView.m */; };
+		ACEF197F1FCE3DB100C1D0E3 /* RSWinLoseOtherCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF197E1FCE3DB100C1D0E3 /* RSWinLoseOtherCellView.m */; };
+		ACEF19871FCEB71200C1D0E3 /* RSWinLoseColorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = ACEF19861FCEB71200C1D0E3 /* RSWinLoseColorModel.m */; };
 		ACF5528B1FBDDBD80012B5EC /* TAAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF5527E1FBDDBD80012B5EC /* TAAbstractDotView.m */; };
 		ACF5528C1FBDDBD80012B5EC /* TAAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF552801FBDDBD80012B5EC /* TAAnimatedDotView.m */; };
 		ACF5528D1FBDDBD80012B5EC /* TADotView.m in Sources */ = {isa = PBXBuildFile; fileRef = ACF552821FBDDBD80012B5EC /* TADotView.m */; };
@@ -78,6 +99,22 @@
 
 /* Begin PBXFileReference section */
 		65F79820696EB5A3BDFD956E /* Pods-RedSunLottery.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedSunLottery.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RedSunLottery/Pods-RedSunLottery.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0518B41FD0429D00596B12 /* RSScorePeriod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSScorePeriod.h; sourceTree = "<group>"; };
+		AC0518B51FD0429E00596B12 /* RSScorePeriod.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSScorePeriod.m; sourceTree = "<group>"; };
+		AC0518B71FD051C800596B12 /* RSMatchModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSMatchModel.h; sourceTree = "<group>"; };
+		AC0518B81FD051C800596B12 /* RSMatchModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSMatchModel.m; sourceTree = "<group>"; };
+		AC1750031FD1073300C8B812 /* RSOtherKaiJiangVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOtherKaiJiangVC.h; sourceTree = "<group>"; };
+		AC1750041FD1073300C8B812 /* RSOtherKaiJiangVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOtherKaiJiangVC.m; sourceTree = "<group>"; };
+		AC1750061FD1148000C8B812 /* RSOtherKaiJiangView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSOtherKaiJiangView.h; sourceTree = "<group>"; };
+		AC1750071FD1148000C8B812 /* RSOtherKaiJiangView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSOtherKaiJiangView.m; sourceTree = "<group>"; };
+		AC1750091FD1335300C8B812 /* RSKaiJiangManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSKaiJiangManager.h; sourceTree = "<group>"; };
+		AC17500A1FD1335300C8B812 /* RSKaiJiangManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSKaiJiangManager.m; sourceTree = "<group>"; };
+		AC17500C1FD1779E00C8B812 /* RSSFPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSFPViewController.h; sourceTree = "<group>"; };
+		AC17500D1FD1779E00C8B812 /* RSSFPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSFPViewController.m; sourceTree = "<group>"; };
+		AC17500F1FD17CA300C8B812 /* RSSFPViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSFPViewCell.h; sourceTree = "<group>"; };
+		AC1750101FD17CA300C8B812 /* RSSFPViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSFPViewCell.m; sourceTree = "<group>"; };
+		AC1750131FD2430600C8B812 /* RSScoreHttpManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSScoreHttpManager.h; sourceTree = "<group>"; };
+		AC1750141FD2430600C8B812 /* RSScoreHttpManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSScoreHttpManager.m; sourceTree = "<group>"; };
 		AC19423E1FB49B0500625C56 /* RedSunLottery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedSunLottery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1942411FB49B0500625C56 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AC1942421FB49B0500625C56 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -136,6 +173,20 @@
 		AC686E201FC9BE8A00A00187 /* RSkCodeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSkCodeModel.m; sourceTree = "<group>"; };
 		AC686E251FCAEAD100A00187 /* RSDaLeTouVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSDaLeTouVC.h; sourceTree = "<group>"; };
 		AC686E261FCAEAD100A00187 /* RSDaLeTouVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSDaLeTouVC.m; sourceTree = "<group>"; };
+		AC686E281FCC220E00A00187 /* RSFooter_BasktLotteryVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFooter_BasktLotteryVC.h; sourceTree = "<group>"; };
+		AC686E291FCC220E00A00187 /* RSFooter_BasktLotteryVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFooter_BasktLotteryVC.m; sourceTree = "<group>"; };
+		AC686E2B1FCC29E100A00187 /* RSFooter_BasktBallModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFooter_BasktBallModel.h; sourceTree = "<group>"; };
+		AC686E2C1FCC29E100A00187 /* RSFooter_BasktBallModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFooter_BasktBallModel.m; sourceTree = "<group>"; };
+		AC686E2E1FCC2A3E00A00187 /* RSFooter_BasBallValueModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFooter_BasBallValueModel.h; sourceTree = "<group>"; };
+		AC686E2F1FCC2A3E00A00187 /* RSFooter_BasBallValueModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFooter_BasBallValueModel.m; sourceTree = "<group>"; };
+		AC686E311FCC3F9000A00187 /* RSLottertFooter_BascktSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSLottertFooter_BascktSectionView.h; sourceTree = "<group>"; };
+		AC686E321FCC3F9000A00187 /* RSLottertFooter_BascktSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSLottertFooter_BascktSectionView.m; sourceTree = "<group>"; };
+		AC686E391FCC558C00A00187 /* RSFooter_BasktBall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSFooter_BasktBall.h; sourceTree = "<group>"; };
+		AC686E3A1FCC558C00A00187 /* RSFooter_BasktBall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSFooter_BasktBall.m; sourceTree = "<group>"; };
+		AC686E3C1FCD9FF000A00187 /* RSScoreTableCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSScoreTableCell.h; sourceTree = "<group>"; };
+		AC686E3D1FCD9FF000A00187 /* RSScoreTableCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSScoreTableCell.m; sourceTree = "<group>"; };
+		AC686E3F1FCDC12A00A00187 /* RSUserSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSUserSectionView.h; sourceTree = "<group>"; };
+		AC686E401FCDC12A00A00187 /* RSUserSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSUserSectionView.m; sourceTree = "<group>"; };
 		ACB4FF261FC6847000536074 /* RSSQiuFirstCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSQiuFirstCell.h; sourceTree = "<group>"; };
 		ACB4FF271FC6847000536074 /* RSSQiuFirstCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSQiuFirstCell.m; sourceTree = "<group>"; };
 		ACB4FF341FC7D71B00536074 /* RSSSQiuSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSSSQiuSection.h; sourceTree = "<group>"; };
@@ -182,6 +233,18 @@
 		ACC25D8F1FB6CF3900F7DF3A /* RSLoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSLoginViewController.h; sourceTree = "<group>"; };
 		ACC25D901FB6CF3900F7DF3A /* RSLoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSLoginViewController.m; sourceTree = "<group>"; };
 		ACC25D911FB6CF3900F7DF3A /* RSLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RSLoginViewController.xib; sourceTree = "<group>"; };
+		ACEF19711FCDC48800C1D0E3 /* RSWinLoseColorVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSWinLoseColorVC.h; sourceTree = "<group>"; };
+		ACEF19721FCDC48800C1D0E3 /* RSWinLoseColorVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSWinLoseColorVC.m; sourceTree = "<group>"; };
+		ACEF19741FCDC77D00C1D0E3 /* RSWinLoseColorSectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSWinLoseColorSectionView.h; sourceTree = "<group>"; };
+		ACEF19751FCDC77D00C1D0E3 /* RSWinLoseColorSectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSWinLoseColorSectionView.m; sourceTree = "<group>"; };
+		ACEF19771FCDCD9500C1D0E3 /* RSWinLoseColorCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSWinLoseColorCell.h; sourceTree = "<group>"; };
+		ACEF19781FCDCD9500C1D0E3 /* RSWinLoseColorCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSWinLoseColorCell.m; sourceTree = "<group>"; };
+		ACEF197A1FCDCE1F00C1D0E3 /* RSWinLoseNumCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSWinLoseNumCellView.h; sourceTree = "<group>"; };
+		ACEF197B1FCDCE1F00C1D0E3 /* RSWinLoseNumCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSWinLoseNumCellView.m; sourceTree = "<group>"; };
+		ACEF197D1FCE3DB100C1D0E3 /* RSWinLoseOtherCellView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSWinLoseOtherCellView.h; sourceTree = "<group>"; };
+		ACEF197E1FCE3DB100C1D0E3 /* RSWinLoseOtherCellView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSWinLoseOtherCellView.m; sourceTree = "<group>"; };
+		ACEF19851FCEB71200C1D0E3 /* RSWinLoseColorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RSWinLoseColorModel.h; sourceTree = "<group>"; };
+		ACEF19861FCEB71200C1D0E3 /* RSWinLoseColorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSWinLoseColorModel.m; sourceTree = "<group>"; };
 		ACF5527D1FBDDBD80012B5EC /* TAAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAbstractDotView.h; sourceTree = "<group>"; };
 		ACF5527E1FBDDBD80012B5EC /* TAAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TAAbstractDotView.m; sourceTree = "<group>"; };
 		ACF5527F1FBDDBD80012B5EC /* TAAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TAAnimatedDotView.h; sourceTree = "<group>"; };
@@ -235,6 +298,15 @@
 				C600D053A7C8CC4B6F28FB99 /* libPods-RedSunLottery.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AC1750121FD242B600C8B812 /* RSHTTPScoreManager */ = {
+			isa = PBXGroup;
+			children = (
+				AC1750131FD2430600C8B812 /* RSScoreHttpManager.h */,
+				AC1750141FD2430600C8B812 /* RSScoreHttpManager.m */,
+			);
+			path = RSHTTPScoreManager;
 			sourceTree = "<group>";
 		};
 		AC1942351FB49B0500625C56 = {
@@ -367,9 +439,9 @@
 		AC19425E1FB4A7D900625C56 /* third */ = {
 			isa = PBXGroup;
 			children = (
+				ACC25D881FB6CE4D00F7DF3A /* controller */,
 				ACF552741FBDBEB90012B5EC /* model */,
 				ACF552731FBDBEB90012B5EC /* view */,
-				ACC25D881FB6CE4D00F7DF3A /* controller */,
 			);
 			path = third;
 			sourceTree = "<group>";
@@ -377,9 +449,10 @@
 		AC19425F1FB4A7DA00625C56 /* secend */ = {
 			isa = PBXGroup;
 			children = (
+				AC1750121FD242B600C8B812 /* RSHTTPScoreManager */,
+				ACC25D851FB6CE2400F7DF3A /* controller */,
 				ACF552791FBDBF250012B5EC /* model */,
 				ACF5527A1FBDBF250012B5EC /* view */,
-				ACC25D851FB6CE2400F7DF3A /* controller */,
 			);
 			path = secend;
 			sourceTree = "<group>";
@@ -572,6 +645,14 @@
 			children = (
 				ACC25D7A1FB6CA8700F7DF3A /* RSThirdViewController.h */,
 				ACC25D7B1FB6CA8700F7DF3A /* RSThirdViewController.m */,
+				AC686E281FCC220E00A00187 /* RSFooter_BasktLotteryVC.h */,
+				AC686E291FCC220E00A00187 /* RSFooter_BasktLotteryVC.m */,
+				ACEF19711FCDC48800C1D0E3 /* RSWinLoseColorVC.h */,
+				ACEF19721FCDC48800C1D0E3 /* RSWinLoseColorVC.m */,
+				AC1750031FD1073300C8B812 /* RSOtherKaiJiangVC.h */,
+				AC1750041FD1073300C8B812 /* RSOtherKaiJiangVC.m */,
+				AC17500C1FD1779E00C8B812 /* RSSFPViewController.h */,
+				AC17500D1FD1779E00C8B812 /* RSSFPViewController.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -604,10 +685,26 @@
 		ACF552731FBDBEB90012B5EC /* view */ = {
 			isa = PBXGroup;
 			children = (
-				AC395F3E1FC449F10028F84E /* LotteryDetailCell.h */,
 				AC395F3C1FC449F10028F84E /* LotteryDetailCell.m */,
+				AC395F3E1FC449F10028F84E /* LotteryDetailCell.h */,
 				AC395F3D1FC449F10028F84E /* PeriodTitleCell.h */,
 				AC395F3B1FC449F10028F84E /* PeriodTitleCell.m */,
+				AC686E311FCC3F9000A00187 /* RSLottertFooter_BascktSectionView.h */,
+				AC686E321FCC3F9000A00187 /* RSLottertFooter_BascktSectionView.m */,
+				AC686E391FCC558C00A00187 /* RSFooter_BasktBall.h */,
+				AC686E3A1FCC558C00A00187 /* RSFooter_BasktBall.m */,
+				ACEF19741FCDC77D00C1D0E3 /* RSWinLoseColorSectionView.h */,
+				ACEF19751FCDC77D00C1D0E3 /* RSWinLoseColorSectionView.m */,
+				ACEF19771FCDCD9500C1D0E3 /* RSWinLoseColorCell.h */,
+				ACEF19781FCDCD9500C1D0E3 /* RSWinLoseColorCell.m */,
+				ACEF197A1FCDCE1F00C1D0E3 /* RSWinLoseNumCellView.h */,
+				ACEF197B1FCDCE1F00C1D0E3 /* RSWinLoseNumCellView.m */,
+				ACEF197D1FCE3DB100C1D0E3 /* RSWinLoseOtherCellView.h */,
+				ACEF197E1FCE3DB100C1D0E3 /* RSWinLoseOtherCellView.m */,
+				AC1750061FD1148000C8B812 /* RSOtherKaiJiangView.h */,
+				AC1750071FD1148000C8B812 /* RSOtherKaiJiangView.m */,
+				AC17500F1FD17CA300C8B812 /* RSSFPViewCell.h */,
+				AC1750101FD17CA300C8B812 /* RSSFPViewCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -617,6 +714,14 @@
 			children = (
 				AC395F411FC449F80028F84E /* periodTitleModel.h */,
 				AC395F421FC449F80028F84E /* periodTitleModel.m */,
+				AC686E2B1FCC29E100A00187 /* RSFooter_BasktBallModel.h */,
+				AC686E2C1FCC29E100A00187 /* RSFooter_BasktBallModel.m */,
+				AC686E2E1FCC2A3E00A00187 /* RSFooter_BasBallValueModel.h */,
+				AC686E2F1FCC2A3E00A00187 /* RSFooter_BasBallValueModel.m */,
+				ACEF19851FCEB71200C1D0E3 /* RSWinLoseColorModel.h */,
+				ACEF19861FCEB71200C1D0E3 /* RSWinLoseColorModel.m */,
+				AC1750091FD1335300C8B812 /* RSKaiJiangManager.h */,
+				AC17500A1FD1335300C8B812 /* RSKaiJiangManager.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -631,6 +736,8 @@
 		ACF552761FBDBED70012B5EC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				AC686E3F1FCDC12A00A00187 /* RSUserSectionView.h */,
+				AC686E401FCDC12A00A00187 /* RSUserSectionView.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -652,6 +759,10 @@
 		ACF552791FBDBF250012B5EC /* model */ = {
 			isa = PBXGroup;
 			children = (
+				AC0518B41FD0429D00596B12 /* RSScorePeriod.h */,
+				AC0518B51FD0429E00596B12 /* RSScorePeriod.m */,
+				AC0518B71FD051C800596B12 /* RSMatchModel.h */,
+				AC0518B81FD051C800596B12 /* RSMatchModel.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -659,6 +770,8 @@
 		ACF5527A1FBDBF250012B5EC /* view */ = {
 			isa = PBXGroup;
 			children = (
+				AC686E3C1FCD9FF000A00187 /* RSScoreTableCell.h */,
+				AC686E3D1FCD9FF000A00187 /* RSScoreTableCell.m */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -842,12 +955,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC686E3B1FCC558C00A00187 /* RSFooter_BasktBall.m in Sources */,
+				ACEF19761FCDC77D00C1D0E3 /* RSWinLoseColorSectionView.m in Sources */,
 				ACFD40E81FBC89BA00E4BAB3 /* RSUserModel.m in Sources */,
 				ACB4FF371FC7D71B00536074 /* RSSSQiuSection.m in Sources */,
+				ACEF19871FCEB71200C1D0E3 /* RSWinLoseColorModel.m in Sources */,
 				AC395F2B1FC445640028F84E /* RSCathexisNarBtnView.m in Sources */,
 				AC395F111FBF3E150028F84E /* RSFirstLotteryModel.m in Sources */,
+				AC17500E1FD1779E00C8B812 /* RSSFPViewController.m in Sources */,
+				AC0518B91FD051C800596B12 /* RSMatchModel.m in Sources */,
 				ACB9D81E1FB9CBA30019054F /* RSFindPwdViewController.m in Sources */,
 				AC395F141FBF415A0028F84E /* RSFirstBannerModel.m in Sources */,
+				AC1750081FD1148000C8B812 /* RSOtherKaiJiangView.m in Sources */,
+				AC686E411FCDC12B00A00187 /* RSUserSectionView.m in Sources */,
+				AC17500B1FD1335300C8B812 /* RSKaiJiangManager.m in Sources */,
+				AC686E301FCC2A3E00A00187 /* RSFooter_BasBallValueModel.m in Sources */,
 				AC395F461FC44D070028F84E /* RSBaseCathexisViewController.m in Sources */,
 				ACB9D8111FB887950019054F /* RSHttp.m in Sources */,
 				ACC25D6B1FB69C0100F7DF3A /* RSTabBar.m in Sources */,
@@ -858,16 +980,25 @@
 				ACF5528E1FBDDBD80012B5EC /* TAPageControl.m in Sources */,
 				AC395F431FC449F80028F84E /* periodTitleModel.m in Sources */,
 				AC1942511FB49B0500625C56 /* main.m in Sources */,
+				ACEF19791FCDCD9500C1D0E3 /* RSWinLoseColorCell.m in Sources */,
+				AC0518B61FD0429E00596B12 /* RSScorePeriod.m in Sources */,
 				AC395F401FC449F10028F84E /* LotteryDetailCell.m in Sources */,
 				ACB9D8151FB9B7910019054F /* RSProgressHUd.m in Sources */,
+				AC1750051FD1073300C8B812 /* RSOtherKaiJiangVC.m in Sources */,
 				AC395F541FC46C890028F84E /* RSSSQVC.m in Sources */,
 				AC395F3F1FC449F10028F84E /* PeriodTitleCell.m in Sources */,
 				ACC25D711FB6C6D100F7DF3A /* RSBaseViewController.m in Sources */,
+				ACEF197F1FCE3DB100C1D0E3 /* RSWinLoseOtherCellView.m in Sources */,
 				ACB9D82B1FBB37AA0019054F /* RSRsaEncryptor.m in Sources */,
+				AC1750151FD2430600C8B812 /* RSScoreHttpManager.m in Sources */,
 				ACB4FF411FC856AF00536074 /* RSComMoneyView.m in Sources */,
 				ACFD40EC1FBD84EA00E4BAB3 /* SSKeychain.m in Sources */,
+				AC686E2D1FCC29E100A00187 /* RSFooter_BasktBallModel.m in Sources */,
+				ACEF197C1FCDCE1F00C1D0E3 /* RSWinLoseNumCellView.m in Sources */,
 				ACF5528C1FBDDBD80012B5EC /* TAAnimatedDotView.m in Sources */,
+				AC686E331FCC3F9000A00187 /* RSLottertFooter_BascktSectionView.m in Sources */,
 				ACF5528D1FBDDBD80012B5EC /* TADotView.m in Sources */,
+				AC686E3E1FCD9FF100A00187 /* RSScoreTableCell.m in Sources */,
 				ACF5528B1FBDDBD80012B5EC /* TAAbstractDotView.m in Sources */,
 				ACC25D7C1FB6CA8700F7DF3A /* RSThirdViewController.m in Sources */,
 				AC686E271FCAEAD100A00187 /* RSDaLeTouVC.m in Sources */,
@@ -877,6 +1008,7 @@
 				AC686E1B1FC9A92300A00187 /* RSSSQZSModel.m in Sources */,
 				ACC25D921FB6CF3900F7DF3A /* RSLoginViewController.m in Sources */,
 				ACF552901FBDDBD80012B5EC /* SDCycleScrollView.m in Sources */,
+				ACEF19731FCDC48800C1D0E3 /* RSWinLoseColorVC.m in Sources */,
 				AC395F501FC451BF0028F84E /* RSNarBtnCollectionCell.m in Sources */,
 				ACFD40E51FBC890A00E4BAB3 /* RSUserManager.m in Sources */,
 				AC395F5B1FC478D60028F84E /* RSSSQNumLabView.m in Sources */,
@@ -889,10 +1021,12 @@
 				ACC25D761FB6CA3300F7DF3A /* RSFirstViewController.m in Sources */,
 				AC5344D71FBDF5AF003D358E /* RSFirstTypeCell.m in Sources */,
 				ACC25D7F1FB6CA9B00F7DF3A /* RSFourthViewController.m in Sources */,
+				AC1750111FD17CA300C8B812 /* RSSFPViewCell.m in Sources */,
 				AC686E1E1FC9A93600A00187 /* RSSSQLSModel.m in Sources */,
 				AC5344DB1FBDF609003D358E /* RSFirstTypeTableCell.m in Sources */,
 				ACC25D681FB698E800F7DF3A /* RSBaseTabbarVController.m in Sources */,
 				AC395F171FC2F7480028F84E /* RSBannerWebVC.m in Sources */,
+				AC686E2A1FCC220E00A00187 /* RSFooter_BasktLotteryVC.m in Sources */,
 				AC395F5E1FC5900D0028F84E /* RSSSQSecvtionView.m in Sources */,
 				ACB9D8191FB9BB910019054F /* RSRegisViewController.m in Sources */,
 				ACC25D791FB6CA7700F7DF3A /* RSSecendViewController.m in Sources */,

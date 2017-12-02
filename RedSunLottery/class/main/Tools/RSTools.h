@@ -29,4 +29,6 @@
 //把返回的开奖号换成数组，并添加颜色
 + (NSArray *)backKcodeModel:(NSString *)kcode;
 
++ (NSString *)backPeroidTitle:(NSString *)period;
+
 @end

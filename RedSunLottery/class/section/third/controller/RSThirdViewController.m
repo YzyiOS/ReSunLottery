@@ -9,6 +9,13 @@
 #import "RSThirdViewController.h"
 #import "PeriodTitleCell.h"
 #import "LotteryDetailCell.h"
+#import "RSFooter_BasktLotteryVC.h"
+
+#import "RSWinLoseColorVC.h"
+
+#import "RSOtherKaiJiangVC.h"
+
+#import "RSSFPViewController.h"
 
 #define HEIGHT_TableViewHeader              10
 #define ID_PeriodTitleCell                  @"PeriodTitleCell"
@@ -39,6 +46,7 @@
                                                   style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         [_tableView registerClass:[PeriodTitleCell class] forCellReuseIdentifier:ID_PeriodTitleCell];
         [_tableView registerClass:[LotteryDetailCell class] forCellReuseIdentifier:ID_LotteryDetailCell];
         _tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
@@ -67,7 +75,7 @@
     }
     
     LotteryDetailCell *lotteryCell = [tableView dequeueReusableCellWithIdentifier:ID_LotteryDetailCell forIndexPath:indexPath];
-    lotteryCell.lotteryType = indexPath.section;
+    lotteryCell.model = _arrData[indexPath.section];
     return lotteryCell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -86,7 +94,47 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    
+    
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+     periodTitleModel *model = _arrData[indexPath.section];
+    if ([model.lid integerValue] == 1800 || [model.lid integerValue]== 1810) {
+        
+        
+        
+        RSWinLoseColorVC *winVC = [[RSWinLoseColorVC alloc] init];
+        winVC.titleStr = model.lname;
+        winVC.lid = model.lid;//1800-1810,可以点击进去
+        [self.navigationController pushViewController:winVC animated:YES];
+        return;
+    }else if ([model.lid integerValue] == 1700 || [model.lid integerValue] == 1710){
+        RSFooter_BasktLotteryVC *vc = [[RSFooter_BasktLotteryVC alloc] init];
+        vc.play = [model.lid integerValue                                                                                                            ];
+        [self.navigationController pushViewController:vc animated:YES];
+        return;
+    }else if([model.lid integerValue] == 1010 || [model.lid integerValue]== 1530 || [model.lid integerValue]== 1030){
+        RSSFPViewController *pVC = [[RSSFPViewController alloc] init];
+        pVC.titleStr = model.lname;
+        pVC.lid = model.lid;
+        [self.navigationController pushViewController:pVC animated:YES];
+        return;
+        
+    }else{
+        RSOtherKaiJiangVC *vcOther = [[RSOtherKaiJiangVC alloc] init];
+        vcOther.titleStr = model.lname;
+        vcOther.lid = model.lid;
+        [self.navigationController pushViewController:vcOther animated:YES];
+        return;
+        
+    }
+    
+    
+    
+    
+    
+   
+    
+    
 }
 
 

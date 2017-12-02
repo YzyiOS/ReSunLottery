@@ -26,5 +26,6 @@
     #import "RSUserManager.h"
     #import "RSAPI.h"
     #import "SSKeychain.h"
+    #import "RSkCodeModel.h"
 
 #endif /* PrefixHeader_pch */

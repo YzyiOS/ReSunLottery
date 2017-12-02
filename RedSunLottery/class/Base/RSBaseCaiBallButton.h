@@ -12,4 +12,5 @@
 
 - (instancetype)initWithFrame:(CGRect)frame nalColor:(UIColor *)nalColor selectColor:(UIColor *)selectColor titleStr:(NSString *)strTitle;
 
+@property (nonatomic, assign) BOOL selectBtn;
 @end

@@ -10,7 +10,16 @@
 #import <CommonCrypto/CommonCrypto.h>
 #import "RSkCodeModel.h"
 
+@interface RSTools()
+
+
+
+@end
+
 @implementation RSTools
+
+
+
 
 /** 验证手机号 */
 + (BOOL)isMobileNumber:(NSString *)mobileNum{
@@ -49,7 +58,7 @@
 /**
  *  对字符串进行MD5加密
  *
- *  @param  dic
+ *
  *
  *  @return 转化的字符串
  *
@@ -157,14 +166,47 @@
         model.num = red[i];
         [backArr addObject:model];
     }
-    NSArray *blue = [all[1] componentsSeparatedByString:@","];
-    for (int i = 0; i < blue.count; i ++) {
-        RSkCodeModel *model = [[RSkCodeModel alloc] init];
-        model.numColor = [UIColor colorWithHexString:@"#177FFC"];
-        model.num = blue[i];
-        [backArr addObject:model];
+    if (all.count > 1) {//可能没有篮球
+        NSArray *blue = [all[1] componentsSeparatedByString:@","];
+        for (int i = 0; i < blue.count; i ++) {
+            RSkCodeModel *model = [[RSkCodeModel alloc] init];
+            model.numColor = [UIColor colorWithHexString:@"#177FFC"];
+            model.num = blue[i];
+            [backArr addObject:model];
+        }
     }
     
+    
     return backArr;
+}
+
++ (NSString *)backPeroidTitle:(NSString *)period{
+    NSDictionary *dicPrioid = @{
+                                 @"1700":@"竞彩足球",
+                                 @"1710":@"竞彩篮球",
+                                 @"1800":@"胜负彩",
+                                 @"1810":@"任九",
+                                 @"1820":@"四场进球彩",
+                                 @"1830":@"六场半全场",
+                                 @"1010":@"双色球",
+                                 @"1030":@"福彩3D",
+                                 @"1070":@"七乐彩",
+                                 @"1500":@"大乐透",
+                                 @"1510":@"七星彩",
+                                 @"1520":@"排列5",
+                                 @"1530":@"排列3",
+                                 @"1050":@"吉林快3",
+                                 @"1060":@"安徽快3",
+                                 @"1090":@"江苏快3",
+                                 @"1040":@"重庆时时彩",
+                                 @"1200":@"江西时时彩",
+                                 @"1550":@"广东11选5",
+                                 @"1560":@"山东11选5",
+                                 @"1570":@"上海11选5",
+                                 
+                                 };
+    
+    return dicPrioid[period];
+    
 }
 @end

@@ -34,6 +34,7 @@
 
 @property (nonatomic, strong) NSMutableArray *redTuoDanSelectBall;
 
+@property (nonatomic, strong) NSMutableArray *blueTuoSelectBall;
 @property (nonatomic, assign) NSInteger palyNum;//1是普通玩法，而是胆拖
 
 @end
@@ -47,6 +48,7 @@
     _redTuoDanSelectBall = [[NSMutableArray alloc] initWithCapacity:0];
     _redSelectBall = [[NSMutableArray alloc] initWithCapacity:0];
     _blueSelectBall = [[NSMutableArray alloc] initWithCapacity:0];
+    _blueTuoSelectBall = [[NSMutableArray alloc] initWithCapacity:0];
     self.arrNarBtnModel = @[@"大乐透.普通",@"大乐透.胆拖"];
     self.view.backgroundColor = K_GRAY_BG_COLOR;
     [self.view addSubview:self.tableView];
@@ -126,7 +128,7 @@
     
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section{
-    if (section == 2) {
+    if (section == 4) {
         return 10;
     }
     return 0.001;
@@ -135,7 +137,7 @@
     if (_palyNum == 1) {
         return 3;//这里是普通玩法
     }
-    return 4;//这里是胆拖玩法
+    return 5;//这里是胆拖玩法
     
 }
 
@@ -205,14 +207,22 @@
             cell.colorType = 0;
             cell.titleStr = @"至少选择5个红球";
             if (_palyNum == 2) {
-                cell.titleStr = @"胆码区 请选择1-5个胆码";
+                cell.titleStr = @"前区胆码区 请选择1-4个胆码";
             }
             [cell setUI:35];
             cell.selectBallArr = _redSelectBall;
-            cell.arr = ^(NSArray *arr) {//返回选中的球
+            
+            cell.arr = ^(NSString *arr) {//返回选中的球
                 RSLog(@"胆码 %@",arr);
-                [_redSelectBall removeAllObjects];
-                [_redSelectBall addObjectsFromArray:arr];
+                if ([_redSelectBall containsObject:arr]) {
+                    [_redSelectBall removeObject:arr];
+                }else{
+                    
+                    [_redSelectBall addObject:arr];
+                }
+                if ([_redTuoDanSelectBall containsObject:arr]) {
+                    [_redTuoDanSelectBall removeObject:arr];
+                }
                 [self setNoteTheNumber];
             };
         }else{
@@ -222,35 +232,77 @@
                 cell.titleStr = @"至少选择2个蓝球";
                 [cell setUI:12];
                 cell.selectBallArr = _blueSelectBall;
-                cell.arr = ^(NSArray *arr) {
-                    RSLog(@"%@",arr);
-                    [_blueSelectBall removeAllObjects];
-                    [_blueSelectBall addObjectsFromArray:arr];
+
+                cell.arr = ^(NSString *arr) {//返回选中的球
+                     RSLog(@"%@",arr);
+                    if ([_blueSelectBall containsObject:arr]) {
+                        [_blueSelectBall removeObject:arr];
+                    }else{
+                        
+                        [_blueSelectBall addObject:arr];
+                    }
+                    
                     [self setNoteTheNumber];
                 };
             }else{
                 if (indexPath.section == 2) {
                     cell.nalColor = K_RedTextColor;
                     cell.colorType = 0;
-                    cell.titleStr = @"拖码区 至少选择2个拖码";
+                    cell.titleStr = @"前区拖码区 请选择2-34个拖码";
                     [cell setUI:35];
                     cell.selectBallArr = _redTuoDanSelectBall;
-                    cell.arr = ^(NSArray *arr) {//返回选中的球
-                        RSLog(@"拖码 %@",arr);
-                        [_redTuoDanSelectBall removeAllObjects];
-                        [_redTuoDanSelectBall addObjectsFromArray:arr];
+                    
+                    cell.arr = ^(NSString *arr) {//返回选中的球
+                         RSLog(@"拖码 %@",arr);
+                        if ([_redTuoDanSelectBall containsObject:arr]) {
+                            [_redTuoDanSelectBall removeObject:arr];
+                        }else{
+                            
+                            [_redTuoDanSelectBall addObject:arr];
+                        }
+                        if ([_redSelectBall containsObject:arr]) {
+                            [_redSelectBall removeObject:arr];
+                        }
                         [self setNoteTheNumber];
                     };
+                }else if(indexPath.section == 3){
+                    cell.nalColor = Color_double_blue;
+                    cell.colorType = 1;
+                    cell.titleStr = @"后区胆码区 请选择0-1个胆码";
+           
+                    [cell setUI:12];
+                    cell.selectBallArr = _blueSelectBall;
+                    cell.arr = ^(NSString *arr) {//返回选中的球
+                        RSLog(@"拖篮球 %@",arr);
+                        if ([_blueSelectBall containsObject:arr]) {
+                            [_blueSelectBall removeObject:arr];
+                        }else{
+                            
+                            [_blueSelectBall addObject:arr];
+                        }
+                        if ([_blueTuoSelectBall containsObject:arr]) {
+                            [_blueTuoSelectBall removeObject:arr];
+                        }
+                        [self setNoteTheNumber];
+                    };
+                    
                 }else{
                     cell.nalColor = Color_double_blue;
                     cell.colorType = 1;
-                    cell.titleStr = @"至少选择1个蓝球";
+                    cell.titleStr = @"后区拖码区 请选择2-11个拖码";
                     [cell setUI:12];
-                    cell.selectBallArr = _blueSelectBall;
-                    cell.arr = ^(NSArray *arr) {
-                        RSLog(@"篮球 %@",arr);
-                        [_blueSelectBall removeAllObjects];
-                        [_blueSelectBall addObjectsFromArray:arr];
+                    cell.selectBallArr = _blueTuoSelectBall;
+                    cell.arr = ^(NSString *arr) {//返回选中的球
+                        RSLog(@"拖篮球 %@",arr);
+                        if ([_blueTuoSelectBall containsObject:arr]) {
+                            [_blueTuoSelectBall removeObject:arr];
+                        }else{
+                            
+                            [_blueTuoSelectBall addObject:arr];
+                        }
+                        if ([_blueSelectBall containsObject:arr]) {
+                            [_blueSelectBall removeObject:arr];
+                        }
                         [self setNoteTheNumber];
                     };
                     
@@ -273,8 +325,12 @@
         self.bomtonView.strMoney = [NSString stringWithFormat:@"%ld",[RSCathexisManeger backNoteNumWithPlayConstant:5 redNum:_redSelectBall.count]*[RSCathexisManeger backNoteNumWithPlayConstant:2 redNum:_blueSelectBall.count] * 2];
         self.bomtonView.strZhuShu = [NSString stringWithFormat:@"%ld",[RSCathexisManeger backNoteNumWithPlayConstant:5 redNum:_redSelectBall.count]*[RSCathexisManeger backNoteNumWithPlayConstant:2 redNum:_blueSelectBall.count]];
     }else{
+        
+        
         self.bomtonView.strMoney = [NSString stringWithFormat:@"%ld",[RSCathexisManeger backNoteNumWithPlayConstant:6 - _redSelectBall.count redNum:_redTuoDanSelectBall.count]*2* _blueSelectBall.count];
         self.bomtonView.strZhuShu = [NSString stringWithFormat:@"%ld",[RSCathexisManeger backNoteNumWithPlayConstant:6 - _redSelectBall.count redNum:_redTuoDanSelectBall.count]*_blueSelectBall.count];
+        
+        [self.tableView reloadData];
         
     }
     

@@ -43,7 +43,11 @@
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     [self setBackgroundImage:[UIImage imageWithColor:_nalColor] forState:UIControlStateSelected];
 }
-
+- (void)setSelectBtn:(BOOL)selectBtn{
+    _selectBtn = selectBtn;
+    self.selected = selectBtn;
+    
+}
 
 /*
 // Only override drawRect: if you perform custom drawing.

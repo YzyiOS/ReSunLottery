@@ -8,7 +8,9 @@
 
 #import "RSFourthViewController.h"
 
-@interface RSFourthViewController ()
+@interface RSFourthViewController ()<UITableViewDelegate,UITableViewDataSource>
+
+@property (nonatomic, strong) UITableView *tableView;
 
 @end
 
@@ -19,6 +21,32 @@
     self.title = @"我的";
     self.view.backgroundColor = [UIColor whiteColor];
     // Do any additional setup after loading the view.
+}
+- (UITableView *)tableView{
+    if (!_tableView) {
+        _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, k_WIDTH, k_HEIGHT) style:UITableViewStyleGrouped];
+        _tableView.delegate = self;
+        _tableView.dataSource = self;
+        _tableView.showsVerticalScrollIndicator  =NO;
+        _tableView.showsHorizontalScrollIndicator = NO;
+        _tableView.estimatedRowHeight = 44;
+        _tableView.sectionFooterHeight = 0;
+        _tableView.sectionHeaderHeight = 0;
+        _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    
+    return _tableView;
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 5;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    
+    return [UITableViewCell new];
 }
 
 - (void)didReceiveMemoryWarning {

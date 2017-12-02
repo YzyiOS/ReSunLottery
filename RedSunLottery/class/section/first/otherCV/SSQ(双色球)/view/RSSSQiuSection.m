@@ -22,10 +22,9 @@
 
 @implementation RSSSQiuSection
 
-
 - (void)setUI:(NSInteger)count{
     _arrBtnAll = [[NSMutableArray alloc] initWithCapacity:0];
-    _selectArrBall = [[NSMutableArray alloc] initWithCapacity:0];
+    
     self.labTitle.text = self.titleStr;
     if (self.colorType) {
         self.btnShake.hidden = YES;
@@ -68,14 +67,16 @@
     NSString *btnTag = sender.titleLabel.text;
     
     
-    if ([_selectArrBall containsObject:btnTag]) {
-        if (!sender.selected) {
-            [_selectArrBall removeObject:btnTag];
-        }
-    }else{
-        [_selectArrBall addObject:btnTag];
-    }
-    self.arr(_selectArrBall);
+//    if ([_selectArrBall containsObject:btnTag]) {
+//        if (!sender.selected) {
+//            [_selectArrBall removeObject:btnTag];
+//        }
+//    }else{
+//        
+//        [_selectArrBall addObject:btnTag];
+//        
+//    }
+    self.arr(btnTag);
     
 }
 

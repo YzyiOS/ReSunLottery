@@ -18,7 +18,7 @@ typedef NS_OPTIONS(NSUInteger, ColorType) {
     ColorTypeBlue  = 1, // 蓝色
 };
 
-typedef void(^SelectedBtnArrBlock)(NSArray *arr);
+typedef void(^SelectedBtnArrBlock)(NSString *arr);
 
 @interface RSSSQiuSection : UITableViewCell
 

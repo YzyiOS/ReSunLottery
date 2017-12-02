@@ -10,7 +10,10 @@
 #define RSCommon_h
 #define k_WIDTH [UIScreen mainScreen].bounds.size.width
 #define k_HEIGHT [UIScreen mainScreen].bounds.size.height
-
+//全尺寸适配
+static inline CGFloat RSAutoWidth(CGFloat width){
+    return width*kScreenWidth/375;
+}
 
 
 
@@ -27,6 +30,8 @@
 #define HVRGBColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 
 #define K_GRAY_BG_COLOR [UIColor colorWithHexString:@"#f4f4f4"]                  // 灰色背景颜色#f1f1f1
+
+#define K_Blue_BG_COLOR [UIColor colorWithHexString:@"#CEE4FF"]   //蓝色背景图
 #define Color_double_blue HVRGBColor(23, 127, 252)                  //双色球蓝
 #define Color_double_red HVRGBColor(255, 44, 85)                    //双色球红
 #define Color_football_green HVRGBColor(66, 219, 58)                //开奖足球底绿色
@@ -43,6 +48,7 @@
 #define PINGFANG_SC_MEDIUM      @"PingFangSC-Medium"
 
 #define RSImage(imgName)  [UIImage imageNamed:imgName]
-
+#define RSNalBtn_DownImg  RSImage(@"particulars_icon_unfurled")
+#define RSNalBtn_UpImg  RSImage(@"particulars_icon_pack")
 
 #endif /* RSCommon_h */
